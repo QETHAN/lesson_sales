@@ -16,6 +16,7 @@ export default function Footer({ children }) {
             <h4 className="font-semibold text-lg text-gray-600">社媒</h4>
 
             <div className="text-gray-400 text-sm mt-3 flex flex-col space-y-3">
+              <a href="">YouTube</a>
               <a href="">Twitter</a>
               <a href="">Weibo</a>
             </div>
