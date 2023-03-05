@@ -1,10 +1,10 @@
-import Lessons from "../components/lessons";
+import PaidLessons from "../components/paidLessons";
 import FreeLessons from "../components/freeLessons";
 
 function HomePage() {
   return (
     <>
-      <Lessons />
+      <PaidLessons />
       <div className="mt-10 bg-white">
         <FreeLessons />
       </div>
