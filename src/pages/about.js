@@ -68,13 +68,13 @@ export default function AboutPage() {
             American English pronunciation 美式英语发音
           </li>
           <li className="list-disc list-inside indent-1">
-            IPronunciation correction 纠音
+            Pronunciation correction 纠音
           </li>
           <li className="list-disc list-inside indent-1">
-            spoken English/listening skills 英语口语/英语听力
+            Spoken English/listening skills 英语口语/英语听力
           </li>
           <li className="list-disc list-inside indent-1">
-            children’s English 少儿英语
+            Children’s English 少儿英语
           </li>
           <li className="list-disc list-inside indent-1">
             Medical English 医疗英语
