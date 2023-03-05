@@ -6,26 +6,24 @@ export default function Footer({ children }) {
           <div>
             <h4 className="font-semibold text-lg text-gray-600">HannahLin's English</h4>
 
-            <div className="mt-3 text-gray-400 text-sm">
+            <div className="mt-3 text-gray-400 hover:text-gray-500 text-sm">
               <label>Email: </label>
-              <a href="mailto:HannahLin@gmail.com">HannahLin@gmail.com</a>
+              <a href="mailto:cjlin23@yahoo.com">cjlin23@yahoo.com</a>
             </div>
           </div>
 
           <div>
             <h4 className="font-semibold text-lg text-gray-600">社媒</h4>
 
-            <div className="text-gray-400 text-sm mt-3 flex flex-col space-y-3">
-              <a href="">YouTube</a>
-              <a href="">Twitter</a>
-              <a href="">Weibo</a>
+            <div className="text-gray-400 hover:text-gray-500 text-sm mt-3 flex flex-col space-y-3">
+              <a href="https://www.youtube.com/@HannahLinEnglish">YouTube</a>
             </div>
           </div>
 
           <div>
             <h4 className="font-semibold text-lg text-gray-600">关于</h4>
 
-            <div className="mt-3 text-gray-400 text-sm">
+            <div className="mt-3 text-gray-400 hover:text-gray-500 text-sm">
               <a href="/about">Hannah Lin</a>
             </div>
           </div>
