@@ -1,12 +1,12 @@
 import Lessons from "../components/lessons";
-import VideoList from "../components/videoList";
+import FreeLessons from "../components/freeLessons";
 
 function HomePage() {
   return (
     <>
       <Lessons />
       <div className="mt-10 bg-white">
-        <VideoList />
+        <FreeLessons />
       </div>
     </>
   );

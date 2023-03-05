@@ -8,12 +8,6 @@ export default function Navbar({ children }) {
           </a>
           <div className="flex items-center space-x-6">
             <a
-              href="/archive"
-              className="text-base text-gray-600 hover:text-gray-800"
-            >
-              目录
-            </a>
-            <a
               href="/about"
               className="text-base text-gray-600 hover:text-gray-800"
             >
