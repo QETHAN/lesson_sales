@@ -14,7 +14,7 @@ export default function FreeLesson({ data, index }) {
           />
         </div>
         <div className="flex-1 my-5 px-0 sm:px-4 lg:px-6">
-          <h2 className="text-lg md:text-xl text-gray-600 hover:text-blue-600 font-semibold line-clamp-6">
+          <h2 className="text-lg md:text-xl text-gray-800 hover:text-blue-800 font-semibold line-clamp-6">
             {data.title}
           </h2>
         </div>

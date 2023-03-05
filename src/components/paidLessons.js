@@ -15,16 +15,16 @@ export default function PaidLessons() {
             >
               <div className="basis-[65%] overflow-hidden" aria-hidden={true}>
                 <img
-                  className="image object-cover hover:scale-[1.03]"
+                  className="image h-full object-cover hover:scale-[1.03]"
                   alt={item.title}
                   src={item.image}
                 />
               </div>
               <div className="flex-1 p-6">
-                <h2 className="text-xl text-gray-700 font-semibold line-clamp-6">
+                <h2 className="text-xl text-gray-800 hover:text-blue-800 font-semibold line-clamp-6">
                   {item.title}
                 </h2>
-                <h3 className="mt-3 text-xl text-gray-600 font-semibold">
+                <h3 className="mt-3 text-xl text-gray-700 font-semibold">
                   {item.subTitle}
                 </h3>
               </div>
@@ -45,10 +45,10 @@ export default function PaidLessons() {
                 />
               </div>
               <div className="flex-1 p-6">
-                <h2 className="text-xl text-gray-700 font-bold line-clamp-6">
+                <h2 className="text-xl text-gray-800 hover:text-blue-800 font-semibold line-clamp-6">
                   {item.title}
                 </h2>
-                <h3 className="mt-3 text-xl text-gray-600 font-semibold">
+                <h3 className="mt-3 text-xl text-gray-700 font-semibold">
                   {item.subTitle}
                 </h3>
               </div>
