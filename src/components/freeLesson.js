@@ -11,6 +11,7 @@ export default function FreeLesson({ data, index }) {
             alt={data.title}
             width="235"
             height="135"
+            loading="lazy"
           />
         </div>
         <div className="flex-1 my-5 px-0 sm:px-4 lg:px-6">

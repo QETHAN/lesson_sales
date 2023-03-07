@@ -18,14 +18,15 @@ const SunSvg = () => (
 export default function DetailPage() {
   return (
     <div className="mt-10 mb-5 container lg:max-w-screen-lg mx-auto">
+      <h1 className="my-10 text-2xl font-bold text-gray-800">付费课程</h1>
       <div className="flex flex-col lg:flex-row space-y-5 lg:space-y-0 lg:space-x-5 bg-white sm:rounded-2xl shadow overflow-hidden">
         <figure className="lg:max-w-[65%] overflow-hidden">
           <img
             className="w-full sm:w-auto sm:h-full object-fill"
             src="/static/img/cover/children-english.jpg"
             alt="点燃孩子英语潜能，让TA终生受益 - 妈妈是打造最佳英语学习环境的超级教练"
-            width="512"
-            height="288"
+            width="666"
+            height="374"
           />
         </figure>
 
