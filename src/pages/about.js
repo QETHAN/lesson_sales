@@ -14,12 +14,12 @@ export default function AboutPage() {
 
       <section className="mt-5 rounded-md bg-white mx-5 lg:mx-0 px-5 py-4 shadow">
         <h2 className="text-gray-800 text-xl font-semibold">Credentials</h2>
-        <ul className="mt-3 pl-4 space-y-2 text-gray-700">
-          <li className="list-disc list-inside indent-1">
+        <ul className="mt-3 ml-4 pl-0 sm:pl-4 space-y-2 text-gray-700">
+          <li className="list-disc">
             MA (Master of Arts) in TESOL (Teaching English to Speakers of Other
             Language)- Biola University, USA
           </li>
-          <li className="list-disc list-inside indent-1">
+          <li className="list-disc">
             BA in International Trade and Economics, China
           </li>
         </ul>
@@ -27,35 +27,35 @@ export default function AboutPage() {
 
       <section className="mt-5 rounded-md bg-white mx-5 lg:mx-0 px-5 py-4 shadow">
         <h2 className="text-gray-800 text-xl font-semibold">Teaching history</h2>
-        <ul className="mt-3 pl-4 space-y-2 text-gray-700">
-          <li className="list-disc list-inside indent-1">
+        <ul className="mt-3 ml-4 pl-0 sm:pl-4 space-y-2 text-gray-700">
+          <li className="list-disc">
             ESL instructor and tutor at Trinity Western University in Canada
           </li>
-          <li className="list-disc list-inside indent-1">
+          <li className="list-disc">
             Instructor at an Adult Language School in Vancouver
           </li>
-          <li className="list-disc list-inside indent-1">
+          <li className="list-disc">
             Private English tutor for international students and Chinese
             immigrants
           </li>
-          <li className="list-disc list-inside indent-1">YouTube content creator focused on English learning</li>
-          <li className="list-disc list-inside indent-1">
+          <li className="list-disc">YouTube content creator focused on English learning</li>
+          <li className="list-disc">
             Kids' Sunday School teacher at a local church in Vancouver, Canada
           </li>
-          <li className="list-disc list-inside indent-1">
+          <li className="list-disc">
             Associate Professor at a Chinese University with 10 years of
             teaching experience
           </li>
-          <li className="list-disc list-inside indent-1">English teacher at an international preschool in China</li>
+          <li className="list-disc">English teacher at an international preschool in China</li>
         </ul>
       </section>
 
       <section className="mt-5 rounded-md bg-white mx-5 lg:mx-0 px-5 py-4 shadow">
         <h2 className="text-gray-800 text-xl font-semibold">Languages I speak</h2>
-        <ul className="mt-3 pl-4 space-y-2 text-gray-700">
-          <li className="list-disc list-inside indent-1">English</li>
-          <li className="list-disc list-inside indent-1">Chinese</li>
-          <li className="list-disc list-inside indent-1">Korean</li>
+        <ul className="mt-3 ml-4 pl-0 sm:pl-4 space-y-2 text-gray-700">
+          <li className="list-disc">English</li>
+          <li className="list-disc">Chinese</li>
+          <li className="list-disc">Korean</li>
         </ul>
       </section>
 
@@ -63,23 +63,23 @@ export default function AboutPage() {
         <h2 className="text-gray-800 text-xl font-semibold">
           Teaching fields that I’m passionate about
         </h2>
-        <ul className="mt-3 pl-4 space-y-2 text-gray-700">
-          <li className="list-disc list-inside indent-1">
+        <ul className="mt-3 ml-4 pl-0 sm:pl-4 space-y-2 text-gray-700">
+          <li className="list-disc">
             American English pronunciation 美式英语发音
           </li>
-          <li className="list-disc list-inside indent-1">
+          <li className="list-disc">
             Pronunciation correction 纠音
           </li>
-          <li className="list-disc list-inside indent-1">
+          <li className="list-disc">
             Spoken English/listening skills 英语口语/英语听力
           </li>
-          <li className="list-disc list-inside indent-1">
+          <li className="list-disc">
             Children’s English 少儿英语
           </li>
-          <li className="list-disc list-inside indent-1">
+          <li className="list-disc">
             Medical English 医疗英语
           </li>
-          <li className="list-disc list-inside indent-1">
+          <li className="list-disc">
             News English 新闻英语
           </li>
         </ul>
@@ -87,12 +87,12 @@ export default function AboutPage() {
 
       <section className="mt-5 rounded-md bg-white mx-5 lg:mx-0 px-5 py-4 shadow">
         <h2 className="text-gray-800 text-xl font-semibold">Family information</h2>
-        <ul className="mt-3 pl-4 space-y-2 text-gray-700">
-          <li className="list-disc list-inside indent-1">
+        <ul className="mt-3 ml-4 pl-0 sm:pl-4 space-y-2 text-gray-700">
+          <li className="list-disc">
             A happy wife married to a loving, handy, hardworking husband with
             one precious son, 17, and one precious daughter, 13.
           </li>
-          <li className="list-disc list-inside indent-1">
+          <li className="list-disc">
             幸福的妻子/妈妈。
             先生爱心洋溢、灵巧能干、勤劳踏实，育有一子17岁，一女13岁。
           </li>
