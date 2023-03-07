@@ -13,7 +13,7 @@ export default function PaidLessons() {
               href={item.link}
               aria-label={item.subTitle}
             >
-              <div className="basis-[65%] overflow-hidden" aria-hidden={true}>
+              <div className="sm:basis-[65%] overflow-hidden" aria-hidden={true}>
                 <img
                   className="image h-full object-cover hover:scale-[1.03]"
                   alt={item.title}
