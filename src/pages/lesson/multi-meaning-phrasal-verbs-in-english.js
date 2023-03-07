@@ -5,7 +5,7 @@ export default function DetailPage() {
       <div className="flex flex-col lg:flex-row space-y-5 lg:space-y-0 lg:space-x-5 bg-white sm:rounded-2xl shadow overflow-hidden">
         <figure className="lg:max-w-[65%] overflow-hidden">
           <img
-            className="w-full sm:w-auto sm:h-full object-fill"
+            className="w-full sm:w-auto sm:max-h-full object-fill"
             src="/static/img/cover/phrasal-verbs.jpg"
             alt="解锁英语口语中多义动词短语的力量：掌握常用用法"
             width="666"

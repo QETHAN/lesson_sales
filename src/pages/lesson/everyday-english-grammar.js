@@ -5,7 +5,7 @@ export default function DetailPage() {
       <div className="flex flex-col lg:flex-row space-y-5 lg:space-y-0 lg:space-x-5 bg-white sm:rounded-2xl shadow overflow-hidden">
         <figure className="lg:max-w-[65%] overflow-hidden">
           <img
-            className="w-full sm:w-auto sm:h-full object-fill"
+            className="w-full sm:w-auto sm:max-h-full object-fill"
             src="/static/img/cover/everyday-english.jpg"
             alt="揭秘日常英语语法：真实场景下的常用语法"
             width="666"

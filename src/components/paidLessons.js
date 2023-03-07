@@ -7,31 +7,31 @@ export default function PaidLessons() {
       <ul className="flex flex-col sm:flex-row space-y-5 flex-wrap justify-between">
         {data.map((item, index) => {
           if (index === 0) {
-            return <li key={index} className="rounded-2xl overflow-hidden bg-white basis-[100%] shadow">
+            return <li key={index} className="rounded-2xl overflow-hidden bg-white basis-[100%] shadow rotate-0">
             <a
-              className="flex flex-col sm:flex-row"
+              className="flex flex-col lg:flex-row"
               href={item.link}
               aria-label={item.subTitle}
             >
               <div className="sm:basis-[65%] overflow-hidden" aria-hidden={true}>
                 <img
-                  className="image h-full object-cover hover:scale-[1.03]"
+                  className="image sm:max-h-full object-cover hover:scale-[1.03]"
                   alt={item.title}
                   src={item.image}
                 />
               </div>
-              <div className="flex-1 p-6">
-                <h2 className="text-xl text-gray-800 hover:text-blue-800 font-semibold line-clamp-6">
+              <div className="flex-1 px-6">
+                <h2 className="my-4 text-xl text-gray-800 hover:text-blue-800 font-semibold line-clamp-6">
                   {item.title}
                 </h2>
-                <h3 className="mt-3 text-xl text-gray-700 font-semibold">
+                <h3 className="my-4 text-xl text-gray-700 font-semibold">
                   {item.subTitle}
                 </h3>
               </div>
             </a>
           </li>
           } else {
-            return <li key={index} className="basis-[calc(50%-10px)] rounded-2xl overflow-hidden bg-white shadow">
+            return <li key={index} className="basis-[calc(50%-10px)] rounded-2xl overflow-hidden bg-white shadow rotate-0">
             <a
               className="flex flex-col"
               href={item.link}
@@ -44,11 +44,11 @@ export default function PaidLessons() {
                   src={item.image}
                 />
               </div>
-              <div className="flex-1 p-6">
-                <h2 className="text-xl text-gray-800 hover:text-blue-800 font-semibold line-clamp-6">
+              <div className="flex-1 px-6">
+                <h2 className="my-4 text-xl text-gray-800 hover:text-blue-800 font-semibold line-clamp-6">
                   {item.title}
                 </h2>
-                <h3 className="mt-3 text-xl text-gray-700 font-semibold">
+                <h3 className="my-4 text-xl text-gray-700 font-semibold">
                   {item.subTitle}
                 </h3>
               </div>
