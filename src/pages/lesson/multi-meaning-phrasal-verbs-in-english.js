@@ -33,7 +33,7 @@ export default function DetailPage() {
             </dl>
             <dl className="my-3 flex space-x-2 text-gray-700 font-medium text-base">
               <dt>价格：</dt>
-              <dd>$90</dd>
+              <dd>USD $90</dd>
             </dl>
             <div className="my-8 lg:my-4 sm:text-center lg:text-left">
               <button className="w-full sm:w-2/3 lg:w-auto px-10 py-2 rounded-md bg-blue-500 hover:bg-blue-600 text-white font-semibold text-base">
