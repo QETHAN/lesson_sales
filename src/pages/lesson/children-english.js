@@ -22,7 +22,7 @@ export default function DetailPage() {
       <div className="flex flex-col lg:flex-row space-y-5 lg:space-y-0 lg:space-x-5 bg-white sm:rounded-2xl shadow overflow-hidden">
         <figure className="lg:max-w-[65%] overflow-hidden">
           <img
-            className="w-full sm:w-auto sm:max-h-full object-fill"
+            className="w-full sm:w-auto h-full object-fill"
             src="/static/img/cover/children-english.jpg"
             alt="点燃孩子英语潜能，让TA终生受益 - 妈妈是打造最佳英语学习环境的超级教练"
             width="666"
@@ -41,7 +41,7 @@ export default function DetailPage() {
               点燃孩子英语潜能，让TA终生受益 - 妈妈是打造最佳英语学习环境的超级教练
             </h2>
           </div>
-          <div className="mt-8 lg:mt-0 px-5 lg:px-0">
+          <div className="mt-8 lg:mt-5 px-5 lg:px-0">
             <dl className="my-3 flex space-x-2 text-gray-600 font-medium text-base">
               <dt>课程更新频次：</dt>
               <dd>两期视频/月</dd>
