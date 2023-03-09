@@ -1,3 +1,4 @@
+import React from "react";
 import data from "../data/free_lessons.json";
 import FreeLesson from "./freeLesson";
 
@@ -16,12 +17,9 @@ export default function FreeLessons() {
             const firstItem = data[index];
             const secondItem = data[index + 1];
             return (
-              <>
-                <FreeLesson key={index} data={firstItem} index={index} />
-                <li
-                  key={index}
-                  className="lg:hidden w-full my-5 h-px bg-gray-200"
-                ></li>
+              <React.Fragment key={index}>
+                <FreeLesson data={firstItem} index={index} />
+                <li className="lg:hidden w-full my-5 h-px bg-gray-200"></li>
                 {secondItem && (
                   <FreeLesson
                     key={index + 1}
@@ -30,9 +28,9 @@ export default function FreeLessons() {
                   />
                 )}
                 {showDivider && (
-                  <li key={index} className="w-full my-5 h-px bg-gray-200"></li>
+                  <li className="w-full my-5 h-px bg-gray-200"></li>
                 )}
-              </>
+              </React.Fragment>
             );
           }
         })}

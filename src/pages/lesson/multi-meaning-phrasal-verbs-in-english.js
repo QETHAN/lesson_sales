@@ -1,7 +1,11 @@
+import { handleCheckout } from "../../utils/checkout";
+
 export default function DetailPage() {
   return (
     <div className="container lg:max-w-screen-lg mx-auto sm:px-5 lg:px-0">
-      <h1 className="my-10 px-5 sm:px-0 text-2xl font-bold text-gray-800">付费课程</h1>
+      <h1 className="my-10 px-5 sm:px-0 text-2xl font-bold text-gray-800">
+        付费课程
+      </h1>
       <div className="flex flex-col lg:flex-row space-y-5 lg:space-y-0 lg:space-x-5 bg-white sm:rounded-2xl shadow overflow-hidden">
         <figure className="lg:max-w-[65%] overflow-hidden">
           <img
@@ -36,7 +40,13 @@ export default function DetailPage() {
               <dd>USD $90</dd>
             </dl>
             <div className="my-8 lg:my-4 sm:text-center lg:text-left">
-              <button className="w-full sm:w-2/3 lg:w-auto px-10 py-2 rounded-md bg-blue-500 hover:bg-blue-600 text-white font-semibold text-base">
+              <button
+                className="w-full sm:w-2/3 lg:w-auto px-10 py-2 rounded-md bg-blue-500 hover:bg-blue-600 text-white font-semibold text-base"
+                onClick={handleCheckout({
+                  priceId: "price_1MjYmvEFSGuO3C4LL6frCwZC",
+                  quantity: 1,
+                })}
+              >
                 购买
               </button>
             </div>
