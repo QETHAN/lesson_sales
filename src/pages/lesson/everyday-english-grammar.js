@@ -41,10 +41,10 @@ export default function DetailPage() {
       <h1 className="my-10 px-5 sm:px-0 text-2xl font-bold text-gray-800">
         付费课程
       </h1>
-      <div className="flex flex-col lg:flex-row space-y-5 lg:space-y-0 lg:space-x-5 bg-white sm:rounded-2xl shadow overflow-hidden">
+      <div className="flex flex-col lg:flex-row space-y-5 lg:space-y-0 bg-white sm:rounded-2xl shadow overflow-hidden">
         <figure className="lg:max-w-[65%] overflow-hidden">
           <Image
-            className="w-full object-fill"
+            className="w-full h-full object-fill"
             src="/static/img/cover/everyday-english.jpg"
             alt="揭秘日常英语语法：真实场景下的常用语法"
             width="666"
@@ -52,17 +52,17 @@ export default function DetailPage() {
             priority
           />
         </figure>
-        <div className="flex-1 flex flex-col justify-between">
-          <div className="px-5 lg:px-0 lg:mr-5">
+        <div className="flex-1 flex flex-col justify-between px-5">
+          <div>
             <h1 className="lg:mt-4 text-gray-800 font-semibold text-xl">
               Unlocking Everyday English Grammar: Real-Life Situations and
               Common Usage
             </h1>
-            <h2 className="text-gray-700 font-semibold text-lg">
+            <h2 className="mt-2 text-gray-700 font-semibold text-lg">
               揭秘日常英语语法：真实场景下的常用语法
             </h2>
           </div>
-          <div className="mt-8 lg:mt-5 px-5 lg:px-0">
+          <div className="mt-8 lg:mt-5">
             <dl className="my-3 flex space-x-2 text-gray-600 text-base">
               <dt>课程更新频次：</dt>
               <dd>两期视频/月</dd>
@@ -75,7 +75,7 @@ export default function DetailPage() {
               <dt>价格：</dt>
               <dd className="text-lg">USD $90</dd>
             </dl>
-            <div className="my-8 lg:my-4 sm:text-center lg:text-left">
+            <div className="my-8 lg:my-4 sm:w-2/3 lg:w-full mx-auto sm:text-center lg:text-left">
               <BuyButton
                 onClick={handleCheckout({
                   priceId: "price_1MjYmvEFSGuO3C4LL6frCwZC",

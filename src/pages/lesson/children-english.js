@@ -1,7 +1,19 @@
+import React from "react";
+import classNames from "classnames";
 import Image from "next/image";
 import Head from "next/head";
 import BuyButton from "../../components/BuyButton";
 import { handleCheckout } from "../../utils/checkout";
+
+const prices = [
+  {
+    type: "12周",
+    price: "140 美元/周",
+    priceId: "price_1J9",
+  },
+  { type: "24周", price: "120美元/周", priceId: "price_1J9" },
+  { type: "48周", price: "100美元/周", priceId: "price_1J9" },
+];
 
 const SunSvg = () => (
   <svg
@@ -21,10 +33,14 @@ const SunSvg = () => (
 );
 
 export default function DetailPage() {
+  const [selectedIndex, setSelectedIndex] = React.useState(0);
   return (
     <div className="container lg:max-w-screen-lg mx-auto sm:px-5 lg:px-0">
       <Head>
-        <title>点燃孩子英语潜能，让TA终生受益 - 妈妈是打造最佳英语学习环境的超级教练 | 少儿英语</title>
+        <title>
+          点燃孩子英语潜能，让TA终生受益 - 妈妈是打造最佳英语学习环境的超级教练
+          | 少儿英语 | 早教英语
+        </title>
         <meta charset="UTF-8" />
         <meta
           name="viewport"
@@ -40,7 +56,10 @@ export default function DetailPage() {
           content="English lessons, online learning, grammar, vocabulary, pronunciation, 美式英语/英文听力, 美式英语口语, 美式英语发音技巧, 医学英语常用短语, 医学英语, 看病英语, 看医生英语"
         />
         <meta name="author" content="Hannah Lin" />
-        <meta property="og:title" content="点燃孩子英语潜能，让TA终生受益 - 妈妈是打造最佳英语学习环境的超级教练 | 少儿英语" />
+        <meta
+          property="og:title"
+          content="点燃孩子英语潜能，让TA终生受益 - 妈妈是打造最佳英语学习环境的超级教练 | 少儿英语"
+        />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://hannahlinenglish.com" />
         <meta
@@ -55,10 +74,10 @@ export default function DetailPage() {
       <h1 className="my-10 px-5 sm:px-0 text-2xl font-bold text-gray-800">
         付费课程
       </h1>
-      <div className="flex flex-col lg:flex-row space-y-5 lg:space-y-0 lg:space-x-5 bg-white sm:rounded-2xl shadow overflow-hidden">
+      <div className="flex flex-col lg:flex-row bg-white sm:rounded-2xl shadow overflow-hidden">
         <figure className="lg:max-w-[65%] overflow-hidden">
           <Image
-            className="w-full object-fill"
+            className="w-full h-full object-fill"
             src="/static/img/cover/children-english.jpg"
             alt="点燃孩子英语潜能，让TA终生受益 - 妈妈是打造最佳英语学习环境的超级教练"
             width="666"
@@ -67,40 +86,64 @@ export default function DetailPage() {
           />
         </figure>
 
-        <div className="flex-1 flex flex-col justify-between">
-          <div className="px-5 lg:px-0 lg:mr-5">
-            <h1 className="lg:mt-4 text-gray-800 font-semibold text-xl">
+        <div className="flex-1 flex flex-col justify-between px-5 py-4">
+          <div>
+            <h1 className="text-gray-800 font-semibold text-xl">
               Spark Your Child's English Language Potential for Lifelong
               Benefits - Mom is the Super Coach for Creating the Best English
               Learning Environment!
             </h1>
-            <h2 className="text-gray-700 font-semibold text-lg">
+            <h2 className="mt-2 text-gray-700 font-semibold text-lg">
               点燃孩子英语潜能，让TA终生受益 -
               妈妈是打造最佳英语学习环境的超级教练
             </h2>
           </div>
-          <div className="mt-8 lg:mt-5 px-5 lg:px-0">
-            <dl className="my-3 flex space-x-2 text-gray-600 font-medium text-base">
-              <dt>课程更新频次：</dt>
-              <dd>两期视频/月</dd>
-            </dl>
-            <dl className="my-3 flex space-x-2 text-gray-600 font-medium text-base">
-              <dt>课程期限：</dt>
-              <dd>6 个月</dd>
-            </dl>
-            <dl className="my-3 flex space-x-2 text-gray-700 font-medium text-base">
-              <dt>价格：</dt>
-              <dd className="text-lg">USD $90</dd>
-            </dl>
-            <div className="my-8 lg:my-4 sm:text-center lg:text-left">
-              <BuyButton
-                onClick={handleCheckout({
-                  priceId: "price_1MjYmvEFSGuO3C4LL6frCwZC",
-                  quantity: 1,
+        </div>
+      </div>
+
+      <div className="mt-10 rounded-md bg-white p-4 shadow">
+        <h2 className="text-gray-800 font-semibold text-xl">购买课程</h2>
+        <ul className="mt-5 grid grid-cols-1 gap-y-5 sm:grid-cols-3 sm:gap-y-0 sm:gap-x-5">
+          {prices.map((item, idx) => (
+            <li
+              key={idx}
+              className={classNames(
+                "rounded-lg border group text-center cursor-pointer",
+                {
+                  "border-blue-600": idx === selectedIndex,
+                  "borer-gray-400 hover:border-blue-600": idx !== selectedIndex,
+                }
+              )}
+              onClick={() => setSelectedIndex(idx)}
+            >
+              <h3
+                className={classNames("my-3 text-xl font-semibold", {
+                  "text-blue-700": idx === selectedIndex,
+                  "text-gray-700 group-hover:text-blue-700":
+                    idx !== selectedIndex,
                 })}
-              />
-            </div>
-          </div>
+              >
+                {item.type}
+              </h3>
+              <p
+                className={classNames("my-3 text-base font-medium", {
+                  "text-blue-600": idx === selectedIndex,
+                  "text-gray-600 group-hover:text-blue-600":
+                    idx !== selectedIndex,
+                })}
+              >
+                {item.price}
+              </p>
+            </li>
+          ))}
+        </ul>
+        <div className="sm:w-1/3 mx-auto mt-5 sm:text-center lg:text-left">
+          <BuyButton
+            onClick={handleCheckout({
+              priceId: prices[selectedIndex].priceId,
+              quantity: 1,
+            })}
+          />
         </div>
       </div>
 

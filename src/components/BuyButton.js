@@ -11,7 +11,7 @@ const BuyButton = ({ onClick }) => {
   return (
     <button
       className={classNames(
-        "w-full sm:w-2/3 lg:w-full mx-auto px-10 py-2 rounded-md bg-blue-500 text-white font-semibold text-base transition ease-in-out duration-150",
+        "w-full px-10 py-2 rounded-md bg-blue-500 text-white font-semibold text-base transition ease-in-out duration-150",
         {
           "hover:bg-blue-600": !isLoading,
           "flex justify-center items-center space-x-2 cursor-not-allowed opacity-50":

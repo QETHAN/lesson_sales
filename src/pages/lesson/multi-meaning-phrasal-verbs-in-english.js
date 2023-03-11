@@ -45,7 +45,7 @@ export default function DetailPage() {
       <div className="flex flex-col lg:flex-row space-y-5 lg:space-y-0 bg-white sm:rounded-2xl shadow overflow-hidden">
         <figure className="lg:max-w-[65%] overflow-hidden">
           <Image
-            className="w-full object-fill"
+            className="w-full h-full object-fill"
             src="/static/img/cover/phrasal-verbs.jpg"
             alt="解锁英语口语中多义动词短语的力量：掌握常用用法"
             width="666"
@@ -59,7 +59,7 @@ export default function DetailPage() {
               Unlocking the Power of Multi-Meaning Phrasal Verbs in spoken
               English: Mastering Common Usage
             </h1>
-            <h2 className="text-gray-700 font-semibold text-lg">
+            <h2 className="mt-2 text-gray-700 font-semibold text-lg">
               解锁英语口语中多义动词短语的力量：掌握常用用法
             </h2>
           </div>
@@ -76,7 +76,7 @@ export default function DetailPage() {
               <dt>价格：</dt>
               <dd className="text-lg">USD $90</dd>
             </dl>
-            <div className="my-8 lg:my-4 lg:text-left">
+            <div className="my-8 lg:my-4 sm:w-2/3 lg:w-full mx-auto lg:text-left">
               <BuyButton
                 onClick={handleCheckout({
                   priceId: "price_1MjYmvEFSGuO3C4LL6frCwZC",
