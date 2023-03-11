@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Head from "next/head";
+import BuyButton from "../../components/BuyButton";
 
 export default function DetailPage() {
   return (
