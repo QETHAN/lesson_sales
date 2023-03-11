@@ -16,7 +16,7 @@ export default function PaidLessons() {
             >
               <div className="sm:basis-[65%] overflow-hidden" aria-hidden={true}>
                 <Image
-                  className="image sm:max-h-full object-cover hover:scale-[1.03]"
+                  className="image w-full object-cover hover:scale-[1.03]"
                   alt={item.title}
                   src={item.image}
                   width="666"
@@ -41,10 +41,12 @@ export default function PaidLessons() {
               aria-label={item.subTitle}
             >
               <div className="basis-[65%] overflow-hidden" aria-hidden={true}>
-                <img
+                <Image
                   className="image object-cover hover:scale-[1.03]"
                   alt={item.title}
                   src={item.image}
+                  width="502"
+                  height="282"
                 />
               </div>
               <div className="flex-1 px-6">
