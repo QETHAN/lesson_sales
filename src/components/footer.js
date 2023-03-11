@@ -4,7 +4,9 @@ export default function Footer({ children }) {
       <div className="container lg:max-w-screen-lg mx-auto px-5 lg:px-0">
         <div className="flex flex-col space-y-5 sm:space-y-0 sm:flex-row sm:space-x-20">
           <section>
-            <h4 className="font-medium text-lg text-gray-600">HannahLin's English</h4>
+            <h4 className="font-medium text-lg text-gray-600">
+              HannahLin's English
+            </h4>
 
             <div className="mt-3 text-gray-400 hover:text-gray-500 text-sm">
               <label>Email: </label>
@@ -29,7 +31,9 @@ export default function Footer({ children }) {
           </section>
         </div>
 
-        <p className="mt-10 text-center text-gray-400 text-sm">&copy;2023 HannahLin's English</p>
+        <p className="mt-10 text-center text-gray-400 text-sm">
+          &copy;2023 HannahLin's English
+        </p>
       </div>
     </footer>
   );

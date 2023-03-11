@@ -3,8 +3,15 @@ import Image from "next/image";
 export default function FreeLesson({ data, index }) {
   return (
     <li key={index} className="lg:basis-[calc(50%-10px)]">
-      <a className="flex flex-col space-y-3 sm:flex-row sm:space-y-0 items-center" href={data.link} aria-label={data.title}>
-        <div className="w-full sm:w-[235px] sm:h-[132px] rounded-lg overflow-hidden" aria-hidden={true}>
+      <a
+        className="flex flex-col space-y-3 sm:flex-row sm:space-y-0 items-center"
+        href={data.link}
+        aria-label={data.title}
+      >
+        <div
+          className="w-full sm:w-[235px] sm:h-[132px] rounded-lg overflow-hidden"
+          aria-hidden={true}
+        >
           <Image
             className="image object-cover w-full h-full hover:scale-[1.03]"
             src={data.image}

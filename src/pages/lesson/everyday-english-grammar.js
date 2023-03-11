@@ -1,9 +1,44 @@
 import Image from "next/image";
+import Head from "next/head";
 
 export default function DetailPage() {
   return (
     <div className="container lg:max-w-screen-lg mx-auto sm:px-5 lg:px-0">
-      <h1 className="my-10 px-5 sm:px-0 text-2xl font-bold text-gray-800">付费课程</h1>
+      <Head>
+        <title>揭秘日常英语语法：真实场景下的常用语法</title>
+        <meta charset="UTF-8" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0"
+        />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta
+          name="description"
+          content="谈到语法，大家可能就会想到枯燥的语法知识。与传统语法课程不同，这套付费课程通过大量的生活口语例句，帮助学生了解英语母语者在什么场景下使用这些语法点。"
+        />
+        <meta
+          name="keywords"
+          content="English lessons, online learning, grammar, vocabulary, pronunciation, 美式英语/英文听力, 美式英语口语, 美式英语发音技巧, 医学英语常用短语, 医学英语, 看病英语, 看医生英语"
+        />
+        <meta name="author" content="Hannah Lin" />
+        <meta
+          property="og:title"
+          content="揭秘日常英语语法：真实场景下的常用语法"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://hannahlinenglish.com" />
+        <meta
+          property="og:image"
+          content="https://hannahlinenglish.com/static/img/cover/everyday-english.jpg"
+        />
+        <meta
+          property="og:description"
+          content="谈到语法，大家可能就会想到枯燥的语法知识。与传统语法课程不同，这套付费课程通过大量的生活口语例句，帮助学生了解英语母语者在什么场景下使用这些语法点。"
+        />
+      </Head>
+      <h1 className="my-10 px-5 sm:px-0 text-2xl font-bold text-gray-800">
+        付费课程
+      </h1>
       <div className="flex flex-col lg:flex-row space-y-5 lg:space-y-0 lg:space-x-5 bg-white sm:rounded-2xl shadow overflow-hidden">
         <figure className="lg:max-w-[65%] overflow-hidden">
           <Image
@@ -12,6 +47,7 @@ export default function DetailPage() {
             alt="揭秘日常英语语法：真实场景下的常用语法"
             width="666"
             height="384"
+            priority
           />
         </figure>
         <div className="flex-1 flex flex-col justify-between">
@@ -35,12 +71,15 @@ export default function DetailPage() {
             </dl>
             <dl className="my-3 flex space-x-2 text-gray-700 text-base">
               <dt>价格：</dt>
-              <dd>USD $90</dd>
+              <dd className="text-lg">USD $90</dd>
             </dl>
             <div className="my-8 lg:my-4 sm:text-center lg:text-left">
-              <button className="w-full sm:w-2/3 lg:w-auto px-10 py-2 rounded-md bg-blue-500 hover:bg-blue-600 text-white font-semibold text-base">
-                购买
-              </button>
+              <BuyButton
+                onClick={handleCheckout({
+                  priceId: "price_1MjYmvEFSGuO3C4LL6frCwZC",
+                  quantity: 1,
+                })}
+              />
             </div>
           </div>
         </div>

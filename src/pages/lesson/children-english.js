@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Head from "next/head";
 
 const SunSvg = () => (
   <svg
@@ -20,7 +21,38 @@ const SunSvg = () => (
 export default function DetailPage() {
   return (
     <div className="container lg:max-w-screen-lg mx-auto sm:px-5 lg:px-0">
-      <h1 className="my-10 px-5 sm:px-0 text-2xl font-bold text-gray-800">付费课程</h1>
+      <Head>
+        <title>点燃孩子英语潜能，让TA终生受益 - 妈妈是打造最佳英语学习环境的超级教练 | 少儿英语</title>
+        <meta charset="UTF-8" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0"
+        />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta
+          name="description"
+          content="本课程是为那些有3至6岁孩子的家长而设计的，这些家长希望在家里参与孩子的英语学习，同时创造一个环境让孩子每天都能听到英语。"
+        />
+        <meta
+          name="keywords"
+          content="English lessons, online learning, grammar, vocabulary, pronunciation, 美式英语/英文听力, 美式英语口语, 美式英语发音技巧, 医学英语常用短语, 医学英语, 看病英语, 看医生英语"
+        />
+        <meta name="author" content="Hannah Lin" />
+        <meta property="og:title" content="点燃孩子英语潜能，让TA终生受益 - 妈妈是打造最佳英语学习环境的超级教练 | 少儿英语" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://hannahlinenglish.com" />
+        <meta
+          property="og:image"
+          content="https://hannahlinenglish.com/static/img/cover/children-english.jpg"
+        />
+        <meta
+          property="og:description"
+          content="本课程是为那些有3至6岁孩子的家长而设计的，这些家长希望在家里参与孩子的英语学习，同时创造一个环境让孩子每天都能听到英语。"
+        />
+      </Head>
+      <h1 className="my-10 px-5 sm:px-0 text-2xl font-bold text-gray-800">
+        付费课程
+      </h1>
       <div className="flex flex-col lg:flex-row space-y-5 lg:space-y-0 lg:space-x-5 bg-white sm:rounded-2xl shadow overflow-hidden">
         <figure className="lg:max-w-[65%] overflow-hidden">
           <Image
@@ -29,6 +61,7 @@ export default function DetailPage() {
             alt="点燃孩子英语潜能，让TA终生受益 - 妈妈是打造最佳英语学习环境的超级教练"
             width="666"
             height="384"
+            priority
           />
         </figure>
 
@@ -40,7 +73,8 @@ export default function DetailPage() {
               Learning Environment!
             </h1>
             <h2 className="text-gray-700 font-semibold text-lg">
-              点燃孩子英语潜能，让TA终生受益 - 妈妈是打造最佳英语学习环境的超级教练
+              点燃孩子英语潜能，让TA终生受益 -
+              妈妈是打造最佳英语学习环境的超级教练
             </h2>
           </div>
           <div className="mt-8 lg:mt-5 px-5 lg:px-0">
@@ -54,12 +88,15 @@ export default function DetailPage() {
             </dl>
             <dl className="my-3 flex space-x-2 text-gray-700 font-medium text-base">
               <dt>价格：</dt>
-              <dd>USD $90</dd>
+              <dd className="text-lg">USD $90</dd>
             </dl>
             <div className="my-8 lg:my-4 sm:text-center lg:text-left">
-              <button className="w-full sm:w-2/3 lg:w-auto px-10 py-2 rounded-md bg-blue-500 hover:bg-blue-600 text-white font-semibold text-base">
-                购买
-              </button>
+              <BuyButton
+                onClick={handleCheckout({
+                  priceId: "price_1MjYmvEFSGuO3C4LL6frCwZC",
+                  quantity: 1,
+                })}
+              />
             </div>
           </div>
         </div>

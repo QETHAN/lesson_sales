@@ -1,13 +1,48 @@
 import Image from "next/image";
+import Head from "next/head";
+import BuyButton from "../../components/BuyButton";
 import { handleCheckout } from "../../utils/checkout";
 
 export default function DetailPage() {
   return (
     <div className="container lg:max-w-screen-lg mx-auto sm:px-5 lg:px-0">
+      <Head>
+        <title>解锁英语口语中多义动词短语的力量：掌握常用用法</title>
+        <meta charset="UTF-8" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0"
+        />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta
+          name="description"
+          content="你是否正在为了用英语沟通而苦恼？你是否想知道母语人士是如何自然地表达自己的？你是否想讲出地道自然的英文口语,而不是生硬的中式英语？"
+        />
+        <meta
+          name="keywords"
+          content="English lessons, online learning, grammar, vocabulary, pronunciation, 美式英语/英文听力, 美式英语口语, 美式英语发音技巧, 医学英语常用短语, 医学英语, 看病英语, 看医生英语"
+        />
+        <meta name="author" content="Hannah Lin" />
+        <meta
+          property="og:title"
+          content="解锁英语口语中多义动词短语的力量：掌握常用用法"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://hannahlinenglish.com" />
+        <meta
+          property="og:image"
+          content="https://hannahlinenglish.com/static/img/cover/everyday-english.jpg"
+        />
+        <meta
+          property="og:description"
+          content="你是否正在为了用英语沟通而苦恼？你是否想知道母语人士是如何自然地表达自己的？你是否想讲出地道自然的英文口语,
+          而不是生硬的中式英语？"
+        />
+      </Head>
       <h1 className="my-10 px-5 sm:px-0 text-2xl font-bold text-gray-800">
         付费课程
       </h1>
-      <div className="flex flex-col lg:flex-row space-y-5 lg:space-y-0 lg:space-x-5 bg-white sm:rounded-2xl shadow overflow-hidden">
+      <div className="flex flex-col lg:flex-row space-y-5 lg:space-y-0 bg-white sm:rounded-2xl shadow overflow-hidden">
         <figure className="lg:max-w-[65%] overflow-hidden">
           <Image
             className="w-full object-fill"
@@ -15,10 +50,11 @@ export default function DetailPage() {
             alt="解锁英语口语中多义动词短语的力量：掌握常用用法"
             width="666"
             height="384"
+            priority
           />
         </figure>
-        <div className="flex-1 flex flex-col justify-between">
-          <div className="px-5 lg:px-0 lg:mr-5">
+        <div className="flex-1 flex flex-col justify-between px-5">
+          <div>
             <h1 className="lg:mt-4 text-gray-800 font-semibold text-xl">
               Unlocking the Power of Multi-Meaning Phrasal Verbs in spoken
               English: Mastering Common Usage
@@ -27,7 +63,7 @@ export default function DetailPage() {
               解锁英语口语中多义动词短语的力量：掌握常用用法
             </h2>
           </div>
-          <div className="mt-8 lg:mt-5 px-5 lg:px-0">
+          <div className="mt-8 lg:mt-5">
             <dl className="my-3 flex space-x-2 text-gray-600 text-base">
               <dt>课程更新频次：</dt>
               <dd>两期视频/月</dd>
@@ -36,20 +72,17 @@ export default function DetailPage() {
               <dt>课程期限：</dt>
               <dd>6 个月</dd>
             </dl>
-            <dl className="my-3 flex space-x-2 text-gray-700 text-base">
+            <dl className="my-3 flex items-center space-x-2 text-gray-700 text-base">
               <dt>价格：</dt>
-              <dd>USD $90</dd>
+              <dd className="text-lg">USD $90</dd>
             </dl>
-            <div className="my-8 lg:my-4 sm:text-center lg:text-left">
-              <button
-                className="w-full sm:w-2/3 lg:w-auto px-10 py-2 rounded-md bg-blue-500 hover:bg-blue-600 text-white font-semibold text-base"
+            <div className="my-8 lg:my-4 lg:text-left">
+              <BuyButton
                 onClick={handleCheckout({
                   priceId: "price_1MjYmvEFSGuO3C4LL6frCwZC",
                   quantity: 1,
                 })}
-              >
-                购买
-              </button>
+              />
             </div>
           </div>
         </div>
