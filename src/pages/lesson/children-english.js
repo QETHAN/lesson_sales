@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Head from "next/head";
 import BuyButton from "../../components/BuyButton";
+import { handleCheckout } from "../../utils/checkout";
 
 const SunSvg = () => (
   <svg
