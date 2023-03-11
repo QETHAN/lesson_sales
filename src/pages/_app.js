@@ -1,4 +1,4 @@
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 import '../assets/css/index.css'
 
 export default function MyApp({ Component, pageProps }) {

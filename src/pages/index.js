@@ -1,5 +1,5 @@
-import PaidLessons from "../components/paidLessons";
-import FreeLessons from "../components/freeLessons";
+import PaidLessons from "../components/PaidLessons";
+import FreeLessons from "../components/FreeLessons";
 
 function HomePage() {
   return (

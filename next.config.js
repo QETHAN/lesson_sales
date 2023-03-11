@@ -3,9 +3,9 @@
  */
 const nextConfig = {
   /* config options here */
-  images: {
-    unoptimized: true,
-  },
+  // images: {
+  //   unoptimized: true,
+  // },
 };
 
 module.exports = nextConfig;
