@@ -4,7 +4,7 @@ export default function Footer({ children }) {
       <div className="container lg:max-w-screen-lg mx-auto px-5 lg:px-0">
         <div className="flex flex-col space-y-5 sm:space-y-0 sm:flex-row sm:space-x-20">
           <section>
-            <h4 className="font-medium text-lg text-gray-600">
+            <h4 className="font-medium text-base text-gray-600">
               HannahLin's English
             </h4>
 
@@ -15,7 +15,7 @@ export default function Footer({ children }) {
           </section>
 
           <section>
-            <h4 className="font-medium text-lg text-gray-600">社媒</h4>
+            <h4 className="font-medium text-base text-gray-600">社媒</h4>
 
             <div className="text-gray-400 hover:text-gray-500 text-sm mt-3 flex flex-col space-y-3">
               <a href="https://www.youtube.com/@HannahLinEnglish">YouTube</a>
@@ -23,10 +23,18 @@ export default function Footer({ children }) {
           </section>
 
           <section>
-            <h4 className="font-medium text-lg text-gray-600">关于</h4>
+            <h4 className="font-medium text-base text-gray-600">关于</h4>
 
             <div className="mt-3 text-gray-400 hover:text-gray-500 text-sm">
               <a href="/about">Hannah Lin</a>
+            </div>
+          </section>
+
+          <section>
+            <h4 className="font-medium text-base text-gray-600">FAQ</h4>
+
+            <div className="mt-3 text-gray-400 hover:text-gray-500 text-sm">
+              <a href="/faq/necessary">购买须知</a>
             </div>
           </section>
         </div>

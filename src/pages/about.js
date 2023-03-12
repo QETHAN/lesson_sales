@@ -2,7 +2,7 @@ import Head from "next/head";
 
 export default function AboutPage() {
   return (
-    <div className="mt-10 mb-5 container lg:max-w-screen-lg mx-auto">
+    <div className="container lg:max-w-screen-lg mx-auto px-5 lg:px-0">
       <Head>
         <title>关于我</title>
         <meta charset="UTF-8" />
@@ -34,8 +34,10 @@ export default function AboutPage() {
           获得TESOL硕士学位。在中国某大学英语系执教十多年后，2011年与家人一起移民加拿大。定居加拿大后曾在当地大学教授ESL英文，并持续辅导留学生及新老移民的口语及写作。"
         />
       </Head>
-      <section className="rounded-md bg-white mx-5 lg:mx-0 px-5 py-4 shadow">
-        <h1 className="text-gray-800 text-xl font-semibold">About me</h1>
+
+      <h1 className="my-10 text-2xl font-bold text-gray-800">About Hannah Lin</h1>
+
+      <section className="rounded-md bg-white px-5 py-4 shadow">
         <p className="mt-3 text-gray-700">
           我是Hannah Lin，2002年毕业于美国Biola 大学,
           获得TESOL硕士学位。在中国某大学英语系执教十多年后，2011年与家人一起移民加拿大。定居加拿大后曾在当地大学教授ESL英文，并持续辅导留学生及新老移民的口语及写作。
@@ -45,7 +47,7 @@ export default function AboutPage() {
         </p>
       </section>
 
-      <section className="mt-5 rounded-md bg-white mx-5 lg:mx-0 px-5 py-4 shadow">
+      <section className="mt-5 rounded-md bg-white px-5 py-4 shadow">
         <h2 className="text-gray-800 text-xl font-semibold">Credentials</h2>
         <ul className="mt-3 ml-4 pl-0 sm:pl-4 space-y-2 text-gray-700">
           <li className="list-disc">
@@ -58,7 +60,7 @@ export default function AboutPage() {
         </ul>
       </section>
 
-      <section className="mt-5 rounded-md bg-white mx-5 lg:mx-0 px-5 py-4 shadow">
+      <section className="mt-5 rounded-md bg-white px-5 py-4 shadow">
         <h2 className="text-gray-800 text-xl font-semibold">
           Teaching history
         </h2>
@@ -89,7 +91,7 @@ export default function AboutPage() {
         </ul>
       </section>
 
-      <section className="mt-5 rounded-md bg-white mx-5 lg:mx-0 px-5 py-4 shadow">
+      <section className="mt-5 rounded-md bg-white px-5 py-4 shadow">
         <h2 className="text-gray-800 text-xl font-semibold">
           Languages I speak
         </h2>
@@ -100,7 +102,7 @@ export default function AboutPage() {
         </ul>
       </section>
 
-      <section className="mt-5 rounded-md bg-white mx-5 lg:mx-0 px-5 py-4 shadow">
+      <section className="mt-5 rounded-md bg-white px-5 py-4 shadow">
         <h2 className="text-gray-800 text-xl font-semibold">
           Teaching fields that I’m passionate about
         </h2>
@@ -118,7 +120,7 @@ export default function AboutPage() {
         </ul>
       </section>
 
-      <section className="mt-5 rounded-md bg-white mx-5 lg:mx-0 px-5 py-4 shadow">
+      <section className="mt-5 rounded-md bg-white px-5 py-4 shadow">
         <h2 className="text-gray-800 text-xl font-semibold">
           Family information
         </h2>
