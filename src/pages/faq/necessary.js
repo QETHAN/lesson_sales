@@ -33,7 +33,7 @@ export default function AboutPage() {
         />
       </Head>
 
-      <h1 className="my-10 text-2xl font-bold text-gray-800">购买须知</h1>
+      <h1 className="my-10 text-2xl font-bold text-slate-600">购买须知</h1>
 
       <section className="rounded-md bg-white px-5 py-4 shadow">
         <article>

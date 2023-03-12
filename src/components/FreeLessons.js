@@ -1,11 +1,11 @@
 import React from "react";
 import data from "../data/free_lessons.json";
-import FreeLesson from "./freeLesson";
+import FreeLesson from "./FreeLesson";
 
 export default function FreeLessons() {
   return (
     <div className="container lg:max-w-screen-lg mx-auto px-5 lg:px-0 pb-10">
-      <h1 className="py-10 text-2xl font-bold text-gray-800">YouTube频道</h1>
+      <h1 className="py-10 text-2xl font-bold text-slate-600">YouTube频道</h1>
       <ul className="flex flex-col md:flex-row md:flex-wrap md:justify-between">
         {data.map((_, index) => {
           const showDivider =

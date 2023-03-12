@@ -4,7 +4,7 @@ import data from "../data/paid_lessons.json";
 export default function PaidLessons() {
   return (
     <div className="container lg:max-w-screen-lg mx-auto px-5 lg:px-0">
-      <h1 className="my-10 text-2xl font-bold text-gray-800">最新课程</h1>
+      <h1 className="my-10 text-2xl font-bold text-slate-600">最新课程</h1>
       <ul className="flex flex-col sm:flex-row space-y-5 flex-wrap justify-between">
         {data.map((item, index) => {
           if (index === 0) {
@@ -32,10 +32,10 @@ export default function PaidLessons() {
                     />
                   </div>
                   <div className="flex-1 px-6">
-                    <h2 className="my-4 text-xl text-gray-800 hover:text-blue-800 font-semibold line-clamp-6">
+                    <h2 className="my-4 text-xl text-slate-600 hover:text-slate-500 font-semibold line-clamp-6">
                       {item.title}
                     </h2>
-                    <h3 className="my-4 text-xl text-gray-700 font-semibold">
+                    <h3 className="my-4 text-xl text-slate-500 font-medium">
                       {item.subTitle}
                     </h3>
                   </div>
@@ -67,10 +67,10 @@ export default function PaidLessons() {
                     />
                   </div>
                   <div className="flex-1 px-6">
-                    <h2 className="my-4 text-xl text-gray-800 hover:text-blue-800 font-semibold line-clamp-6">
+                    <h2 className="my-4 text-xl text-slate-600 hover:text-slate-500 font-semibold line-clamp-6">
                       {item.title}
                     </h2>
-                    <h3 className="my-4 text-xl text-gray-700 font-semibold">
+                    <h3 className="my-4 text-xl text-slate-500 font-medium">
                       {item.subTitle}
                     </h3>
                   </div>
