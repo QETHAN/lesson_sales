@@ -108,7 +108,7 @@ export default function DetailPage() {
             <li
               key={idx}
               className={classNames(
-                "rounded-lg border group text-center cursor-pointer",
+                "rounded-lg border group text-center cursor-pointer hover:shadow-lg",
                 {
                   "border-blue-600": idx === selectedIndex,
                   "borer-slate-400 hover:border-blue-600": idx !== selectedIndex,
