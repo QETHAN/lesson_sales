@@ -6,7 +6,7 @@ export default function Navbar({ children }) {
           <a href="/">
             <img
               src="/static/img/logo.png"
-              alt="HannahLin's English"
+              alt="Logo of HannahLin's English"
               className="h-10"
             />
           </a>

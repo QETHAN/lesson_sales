@@ -13,11 +13,11 @@ export default function FreeLesson({ data, index }) {
           aria-hidden={true}
         >
           <Image
-            className="image object-cover w-full h-full hover:scale-[1.03]"
+            className="image w-full object-fill hover:scale-[1.03]"
             src={data.image}
-            alt={data.title}
             width="235"
             height="135"
+            alt={data.title}
             loading="lazy"
           />
         </div>
