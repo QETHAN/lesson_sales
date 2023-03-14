@@ -12,6 +12,12 @@ export default function Navbar({ children }) {
           </a>
           <div className="flex items-center space-x-6">
             <a
+              href="/lesson/private"
+              className="text-base text-slate-600 hover:text-slate-500"
+            >
+              私教课
+            </a>
+            <a
               href="/about"
               className="text-base text-slate-600 hover:text-slate-500"
             >
@@ -19,7 +25,7 @@ export default function Navbar({ children }) {
             </a>
             <a
               href="/faq/necessary"
-              className="text-base text-slate-600 hover:text-slate-500"
+              className="hidden sm:block text-base text-slate-600 hover:text-slate-500"
             >
               FAQ
             </a>
