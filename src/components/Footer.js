@@ -31,6 +31,14 @@ export default function Footer({ children }) {
           </section>
 
           <section>
+            <h4 className="font-medium text-base text-gray-600">联系</h4>
+
+            <div className="mt-3 text-gray-400 hover:text-gray-500 text-sm">
+              <a href="/contact">Contact</a>
+            </div>
+          </section>
+
+          <section>
             <h4 className="font-medium text-base text-gray-600">FAQ</h4>
 
             <div className="mt-3 text-gray-400 hover:text-gray-500 text-sm">
