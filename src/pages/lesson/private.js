@@ -153,7 +153,8 @@ export default function DetailPage() {
             </h3>
             <div className="mt-4 sm:pl-7 space-y-4">
               <p className="text-slate-500 text-base">
-              They are for anyone who wants to level up their listening skills and be able to understand real-life fast conversations.
+                They are for anyone who wants to level up their listening skills
+                and be able to understand real-life fast conversations.
               </p>
               <p className="text-slate-500 text-base">
                 译：我的私教课程适合想要提高听力并能够听懂生活快速英语的学生。
@@ -177,30 +178,23 @@ export default function DetailPage() {
           <li>
             <h3 className="flex space-x-1 text-slate-600 font-semibold text-lg">
               <SunSvg />
-              <span>
-              How long is each lesson? 一节课时长？
-              </span>
+              <span>How long is each lesson? 一节课时长？</span>
             </h3>
             <div className="mt-4 sm:pl-7 space-y-4">
               <p className="text-slate-500 text-base">
-              Each session is 60 minutes long. 
+                Each session is 60 minutes long.
               </p>
-              <p className="text-slate-500 text-base">
-                译：一节课60分钟。
-              </p>
-              
+              <p className="text-slate-500 text-base">译：一节课60分钟。</p>
             </div>
           </li>
           <li>
             <h3 className="flex space-x-1 text-slate-600 font-semibold text-lg">
               <SunSvg />
-              <span>
-              Will I be given homework? 课后会留作业吗？
-              </span>
+              <span>Will I be given homework? 课后会留作业吗？</span>
             </h3>
             <div className="mt-4 sm:pl-7 space-y-4">
               <p className="text-slate-500 text-base">
-              Yes, you will receive listening homework assignments.
+                Yes, students will be given dictation exercises as homework.
               </p>
               <p className="text-slate-500 text-base">
                 译：是的。我会给您布置听力作业。
@@ -210,13 +204,11 @@ export default function DetailPage() {
           <li>
             <h3 className="flex space-x-1 text-slate-600 font-semibold text-lg">
               <SunSvg />
-              <span>
-              How is the lesson conducted? 课程如何进行？
-              </span>
+              <span>How is the lesson conducted? 课程如何进行？</span>
             </h3>
             <div className="mt-4 sm:pl-7 space-y-4">
               <p className="text-slate-500 text-base">
-              Lessons are conducted via Zoom.
+                Lessons are conducted via Zoom.
               </p>
               <p className="text-slate-500 text-base">
                 译：课程将通过Zoom进行。
@@ -230,7 +222,8 @@ export default function DetailPage() {
             </h3>
             <div className="mt-4 sm:pl-7 space-y-4">
               <p className="text-slate-500 text-base">
-              To schedule your lessons, please leave a message in the 'Contact' section of my website.
+                To schedule your lessons, please leave a message in the
+                'Contact' section of my website.
               </p>
               <p className="text-slate-500 text-base">
                 译：请在我的网站“联系”部分留言以安排您的课程时间。
