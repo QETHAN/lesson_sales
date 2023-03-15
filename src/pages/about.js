@@ -10,7 +10,7 @@ export default function AboutPage() {
           name="viewport"
           content="width=device-width, initial-scale=1.0, user-scalable=0"
         />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
         <meta
           name="description"
           content="我是Hannah Lin，2002年毕业于美国Biola 大学,

@@ -13,7 +13,7 @@ export default function DetailPage() {
           name="viewport"
           content="width=device-width, initial-scale=1.0, user-scalable=0"
         />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
         <meta
           name="description"
           content="你是否正在为了用英语沟通而苦恼？你是否想知道母语人士是如何自然地表达自己的？你是否想讲出地道自然的英文口语,而不是生硬的中式英语？"

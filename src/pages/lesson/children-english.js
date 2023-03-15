@@ -46,7 +46,7 @@ export default function DetailPage() {
           name="viewport"
           content="width=device-width, initial-scale=1.0, user-scalable=0"
         />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
         <meta
           name="description"
           content="本课程是为那些有3至6岁孩子的家长而设计的，这些家长希望在家里参与孩子的英语学习，同时创造一个环境让孩子每天都能听到英语。"

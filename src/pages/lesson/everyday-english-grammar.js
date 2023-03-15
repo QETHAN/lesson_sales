@@ -13,7 +13,7 @@ export default function DetailPage() {
           name="viewport"
           content="width=device-width, initial-scale=1.0, user-scalable=0"
         />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
         <meta
           name="description"
           content="谈到语法，大家可能就会想到枯燥的语法知识。与传统语法课程不同，这套付费课程通过大量的生活口语例句，帮助学生了解英语母语者在什么场景下使用这些语法点。"

@@ -10,7 +10,7 @@ export default function AboutPage() {
           name="viewport"
           content="width=device-width, initial-scale=1.0, user-scalable=0"
         />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
         <meta
           name="description"
           content="关于购买后，如何收到和使用HannahLin English的视频课程"
