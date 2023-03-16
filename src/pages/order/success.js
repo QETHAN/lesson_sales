@@ -36,7 +36,7 @@ export default function OrderSuccess({ session }) {
 
       <h1 className="my-10 text-2xl font-bold text-slate-600">购买成功</h1>
 
-      <div className="relative flex flex-col justify-center items-center px-5 py-20 bg-white rounded-lg">
+      <div className="relative flex flex-col justify-center items-center px-5 pt-20 bg-white rounded-lg">
         <div className="flex justify-center items-center w-14 h-14 rounded-full bg-green-500">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -58,15 +58,18 @@ export default function OrderSuccess({ session }) {
           <h2 className="text-xl text-center font-bold text-slate-600">
             Thank you
           </h2>
-          {session && (
-            <p className="mt-10 mb-20 text-center text-xl sm:text-2xl text-slate-500 font-semibold">
-              {session.data?.[0].description}
-            </p>
-          )}
-          <p className="absolute left-0 bottom-0 my-5 px-5 text-center text-base text-slate-500">
-            课程说明：课程将会在您支付成功后的24小时内发送到您的邮箱。
+          <p className="mt-10 mb-20 text-center text-xl sm:text-2xl text-slate-500 font-semibold">
+            {session?.data?.[0].description}
           </p>
         </div>
+
+        <p className="self-start flex flex-col sm:flex-row mb-5 text-base text-slate-500">
+          <label className="flex-shrink-0">课程说明：</label>
+          <div className="mt-2 sm:mt-0 text-left space-y-2">
+            <p>1. 视频课程将会在您支付成功后的24小时内发送到您的邮箱。</p>
+            <p>2. 一对一私教课程，预约上课时间后，通过Zoom视频软件进行上课。</p>
+          </div>
+        </p>
       </div>
     </div>
   );
