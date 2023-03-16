@@ -9,10 +9,18 @@ const prices = [
   {
     type: "12周",
     price: "140 美元/周",
-    priceId: "price_1J9",
+    priceId: process.env.NEXT_PUBLIC_STRIPE_CHILDREN_LESSON_PRICE_ID_12_WEEKS,
   },
-  { type: "24周", price: "120美元/周", priceId: "price_1J9" },
-  { type: "48周", price: "100美元/周", priceId: "price_1J9" },
+  {
+    type: "24周",
+    price: "120美元/周",
+    priceId: process.env.NEXT_PUBLIC_STRIPE_CHILDREN_LESSON_PRICE_ID_24_WEEKS,
+  },
+  {
+    type: "48周",
+    price: "100美元/周",
+    priceId: process.env.NEXT_PUBLIC_STRIPE_CHILDREN_LESSON_PRICE_ID_48_WEEKS,
+  },
 ];
 
 const SunSvg = () => (
@@ -41,7 +49,7 @@ export default function DetailPage() {
           点燃孩子英语潜能，让TA终生受益 - 妈妈是打造最佳英语学习环境的超级教练
           | 少儿英语 | 早教英语
         </title>
-        <meta charset="UTF-8" />
+        <meta charSet="UTF-8" />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1.0, user-scalable=0"
@@ -111,7 +119,8 @@ export default function DetailPage() {
                 "rounded-lg border group text-center cursor-pointer hover:shadow-lg",
                 {
                   "border-blue-600": idx === selectedIndex,
-                  "borer-slate-400 hover:border-blue-600": idx !== selectedIndex,
+                  "borer-slate-400 hover:border-blue-600":
+                    idx !== selectedIndex,
                 }
               )}
               onClick={() => setSelectedIndex(idx)}
@@ -140,6 +149,7 @@ export default function DetailPage() {
         <div className="sm:w-1/3 mx-auto mt-5 sm:text-center lg:text-left">
           <BuyButton
             onClick={handleCheckout({
+              currency: 'USD',
               priceId: prices[selectedIndex].priceId,
               quantity: 1,
             })}

@@ -9,10 +9,18 @@ const prices = [
   {
     type: "1 lesson",
     price: "USD $100",
-    priceId: "price_1J9",
+    priceId: process.env.NEXT_PUBLIC_STRIPE_ONE_ON_ONE_LESSON_PRICE_ID,
   },
-  { type: "5 lessons", price: "USD $300", priceId: "price_1J9" },
-  { type: "10 lessons", price: "USD $500", priceId: "price_1J9" },
+  {
+    type: "5 lessons",
+    price: "USD $300",
+    priceId: process.env.NEXT_PUBLIC_STRIPE_ONE_ON_ONE_LESSON_PRICE_ID_5,
+  },
+  {
+    type: "10 lessons",
+    price: "USD $500",
+    priceId: process.env.NEXT_PUBLIC_STRIPE_ONE_ON_ONE_LESSON_PRICE_ID_10,
+  },
 ];
 
 const SunSvg = () => (
@@ -38,7 +46,7 @@ export default function DetailPage() {
     <div className="container lg:max-w-screen-lg mx-auto sm:px-5 lg:px-0">
       <Head>
         <title>一对一私教（提高听力技能和美国英语发音）</title>
-        <meta charset="UTF-8" />
+        <meta charSet="UTF-8" />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1.0, user-scalable=0"
@@ -136,6 +144,7 @@ export default function DetailPage() {
         <div className="sm:w-1/3 mx-auto mt-5 sm:text-center lg:text-left">
           <BuyButton
             onClick={handleCheckout({
+              currency: 'USD',
               priceId: prices[selectedIndex].priceId,
               quantity: 1,
             })}

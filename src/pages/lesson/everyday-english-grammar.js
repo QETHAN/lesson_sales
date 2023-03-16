@@ -8,7 +8,7 @@ export default function DetailPage() {
     <div className="container lg:max-w-screen-lg mx-auto sm:px-5 lg:px-0">
       <Head>
         <title>揭秘日常英语语法：真实场景下的常用语法</title>
-        <meta charset="UTF-8" />
+        <meta charSet="UTF-8" />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1.0, user-scalable=0"
@@ -78,7 +78,7 @@ export default function DetailPage() {
             <div className="my-8 lg:my-4 sm:w-2/3 lg:w-full mx-auto sm:text-center lg:text-left">
               <BuyButton
                 onClick={handleCheckout({
-                  priceId: "price_1MjYmvEFSGuO3C4LL6frCwZC",
+                  priceId: process.env.NEXT_PUBLIC_STRIPE_GRAMMAR_DAILY_LESSON_PRICE_ID,
                   quantity: 1,
                 })}
               />

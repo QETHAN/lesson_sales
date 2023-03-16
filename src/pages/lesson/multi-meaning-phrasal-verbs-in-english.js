@@ -8,7 +8,7 @@ export default function DetailPage() {
     <div className="container lg:max-w-screen-lg mx-auto sm:px-5 lg:px-0">
       <Head>
         <title>解锁英语口语中多义动词短语的力量：掌握常用用法</title>
-        <meta charset="UTF-8" />
+        <meta charSet="UTF-8" />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1.0, user-scalable=0"
@@ -79,7 +79,7 @@ export default function DetailPage() {
             <div className="my-8 lg:my-4 sm:w-2/3 lg:w-full mx-auto lg:text-left">
               <BuyButton
                 onClick={handleCheckout({
-                  priceId: "price_1MjYmvEFSGuO3C4LL6frCwZC",
+                  priceId: process.env.NEXT_PUBLIC_STRIPE_PHRASAL_VERBS_LESSON_PRICE_ID,
                   quantity: 1,
                 })}
               />
