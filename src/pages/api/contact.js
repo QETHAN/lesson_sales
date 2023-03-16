@@ -11,7 +11,7 @@ export default function (req, res) {
 
   const mailOptions = {
     from: 'qbylucky@gmail.com',
-    to: 'qbylucky@gmail.com',
+    to: 'cjlin23@yahoo.com',
     subject: `Message From ${req.body.firstName} ${req.body.lastName}`,
     text: req.body.message + " | Sent from: " + req.body.email,
     html: `<div>${req.body.message}</div><p>Sent from: ${req.body.email}</p>`
