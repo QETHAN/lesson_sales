@@ -34,7 +34,7 @@ export const handleCheckout = ({ priceId, quantity = 1 }) => {
       //   { expand: ["line-items"] }
       // );
 
-      // alert(JSON.stringify(session, null, 2))
+      // alert(JSON.stringify(result, null, 2))
 
       if (result.error) {
         console.log(result.error.message);

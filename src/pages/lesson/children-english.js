@@ -149,7 +149,6 @@ export default function DetailPage() {
         <div className="sm:w-1/3 mx-auto mt-5 sm:text-center lg:text-left">
           <BuyButton
             onClick={handleCheckout({
-              currency: 'USD',
               priceId: prices[selectedIndex].priceId,
               quantity: 1,
             })}
