@@ -58,17 +58,14 @@ export default function OrderSuccess({ session }) {
           <h2 className="text-xl text-center font-bold text-slate-600">
             Thank you
           </h2>
-          <p className="mt-10 mb-20 text-center text-xl sm:text-2xl text-slate-500 font-semibold">
-            解锁英语口语中多义动词短语的力量：掌握常用用法
-          </p>
-          <p className="absolute left-0 bottom-0 my-5 px-5 text-center text-base text-slate-500">
-            课程说明：课程将会在您支付成功后的24小时内发送到您的邮箱。
-          </p>
           {session && (
-            <p className="my-10 text-center text-xl text-slate-500 font-semibold">
+            <p className="mt-10 mb-20 text-center text-xl sm:text-2xl text-slate-500 font-semibold">
               {session.data?.[0].description}
             </p>
           )}
+          <p className="absolute left-0 bottom-0 my-5 px-5 text-center text-base text-slate-500">
+            课程说明：课程将会在您支付成功后的24小时内发送到您的邮箱。
+          </p>
         </div>
       </div>
     </div>
