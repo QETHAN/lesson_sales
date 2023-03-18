@@ -3,6 +3,21 @@ import Head from "next/head";
 import BuyButton from "../../components/BuyButton";
 import { handleCheckout } from "../../utils/checkout";
 
+const items = [
+  "第1期 - 英文母語者在生活中如何使用【Must have +PP 】",
+  "第2期 - 英文母語者在生活中如何使用【WISH + 過去分詞】",
+  "第3期 - 英文母語者在生活中如何使用【Should have + PP】",
+  "第4期 - 英文母語者特別喜歡用的【You wanna.../You don't wanna... 】",
+  "第5期 - 英文母語者在生活中如何使用【Could have + PP】",
+  "第6期 - 拟人式 语法【 Sth won't do sth】&【Something won't let me do sth】",
+  "第7期 -  英文母語者在生活中超級喜歡用的幾種過去式【生活中的過去式】",
+  "第8期 - 中國学生可能用得不太準確的【It's the first time that…】",
+  "第9期 - 英文母語者在生活中如何使用【WOULD】",
+  "第10期 - 英文母語者在生活中超級喜歡用的幾種現在進行式【現在進行式】",
+  "第11期 - 英文母語者在生活中如何使用【Would have +PP】",
+  "第12期 - 英文母語者超級喜歡用的【Matter, Count】各種常用句式",
+];
+
 export default function DetailPage() {
   return (
     <div className="container lg:max-w-screen-lg mx-auto sm:px-5 lg:px-0">
@@ -78,7 +93,9 @@ export default function DetailPage() {
             <div className="my-8 lg:my-4 sm:w-2/3 lg:w-full mx-auto sm:text-center lg:text-left">
               <BuyButton
                 onClick={handleCheckout({
-                  priceId: process.env.NEXT_PUBLIC_STRIPE_GRAMMAR_DAILY_LESSON_PRICE_ID,
+                  priceId:
+                    process.env
+                      .NEXT_PUBLIC_STRIPE_GRAMMAR_DAILY_LESSON_PRICE_ID,
                   quantity: 1,
                 })}
               />
@@ -87,45 +104,36 @@ export default function DetailPage() {
         </div>
       </div>
 
-      <div className="mt-10 rounded-md bg-white p-4 shadow">
-        <h2 className="text-slate-600 font-semibold text-xl">课程描述</h2>
-        <p className="my-5 text-slate-500 text-base">
-          谈到语法，大家可能就会想到枯燥的语法知识。与传统语法课程不同，这套付费课程通过大量的生活口语例句，帮助学生了解英语母语者在什么场景下使用这些语法点。许多中国学生可能听过这些语法概念，知道怎么答题，但不知道如何在日常生活中自由使用。
-        </p>
-        <p className="my-5 text-slate-500 text-base">
-          视频中的大部分例句是中国学生难以表达或极有可能容易说错的句子。每一期视频都会通过视频和音频形式呈现大量的例句，帮助学生“通过耳朵”熟悉每一句，在实际生活中能够真正使用到这些语法点。毕竟，学语法最终目的是有助于我们使用英语句子。
-        </p>
-        <p className="my-5 text-slate-500 text-base">
-          相信学完这套课程后，这些语法点将不再停留在知识层面，大家可以真正运用到生活当中，将口语提高到一个全新的境界。
-        </p>
+      <div className="mt-10 rounded-md bg-white shadow">
+        <h2 className="p-4 text-slate-600 font-semibold text-xl border-b border-gray-200">
+          课程描述
+        </h2>
+        <div className="p-4 space-y-4">
+          <p className="text-slate-500 text-base">
+            谈到语法，大家可能就会想到枯燥的语法知识。与传统语法课程不同，这套付费课程通过大量的生活口语例句，帮助学生了解英语母语者在什么场景下使用这些语法点。许多中国学生可能听过这些语法概念，知道怎么答题，但不知道如何在日常生活中自由使用。
+          </p>
+          <p className="text-slate-500 text-base">
+            视频中的大部分例句是中国学生难以表达或极有可能容易说错的句子。每一期视频都会通过视频和音频形式呈现大量的例句，帮助学生“通过耳朵”熟悉每一句，在实际生活中能够真正使用到这些语法点。毕竟，学语法最终目的是有助于我们使用英语句子。
+          </p>
+          <p className="text-slate-500 text-base">
+            相信学完这套课程后，这些语法点将不再停留在知识层面，大家可以真正运用到生活当中，将口语提高到一个全新的境界。
+          </p>
+        </div>
       </div>
 
-      <div className="mt-10 rounded-md bg-white p-4 shadow">
-        <h2 className="text-slate-600 font-semibold text-xl">课程目录</h2>
-        <ul className="my-5 text-slate-500 text-base space-y-3">
-          <li>第1期 - 英文母語者在生活中如何使用【Must have +PP 】</li>
-          <li>第2期 - 英文母語者在生活中如何使用【WISH + 過去分詞】</li>
-          <li>第3期 - 英文母語者在生活中如何使用 【Should have + PP】</li>
-          <li>
-            第4期 - 英文母語者特別喜歡用的【You wanna.../You don't wanna... 】
-          </li>
-          <li>第5期 - 英文母語者在生活中如何使用【Could have + PP】</li>
-          <li>
-            第6期 - 拟人式 语法【 Sth won't do sth】&【Something won't let me do
-            sth】
-          </li>
-          <li>
-            第7期 -  英文母語者在生活中超級喜歡用的幾種過去式【生活中的過去式】
-          </li>
-          <li>
-            第8期 - 中國学生可能用得不太準確的【It's the first time that…】
-          </li>
-          <li>第9期 - 英文母語者在生活中如何使用【WOULD】</li>
-          <li>
-            第10期 - 英文母語者在生活中超級喜歡用的幾種現在進行式【現在進行式】
-          </li>
-          <li>第11期 - 英文母語者在生活中如何使用【Would have +PP】</li>
-          <li>第12期 - 英文母語者超級喜歡用的 【Matter, Count】各種常用句式</li>
+      <div className="mt-10 rounded-md bg-white shadow">
+        <h2 className="px-4 py-5 text-slate-600 font-semibold text-xl border-b border-gray-200">
+          课程目录
+        </h2>
+        <ul
+          role="list"
+          className="px-4 divide-y divide-gray-200 text-slate-500"
+        >
+          {items.map((item) => (
+            <li key={item.id} className="py-4">
+              {item}
+            </li>
+          ))}
         </ul>
       </div>
     </div>

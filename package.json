@@ -21,6 +21,8 @@
   },
   "homepage": "https://github.com/QETHAN/lesson_sales#readme",
   "dependencies": {
+    "@headlessui/react": "^1.7.13",
+    "@heroicons/react": "^2.0.16",
     "@stripe/stripe-js": "^1.48.0",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "autoprefixer": "^10.4.14",

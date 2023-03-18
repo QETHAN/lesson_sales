@@ -1,4 +1,19 @@
 import Head from "next/head";
+import { Disclosure } from "@headlessui/react";
+import { MinusSmallIcon, PlusSmallIcon } from "@heroicons/react/24/outline";
+
+const faqs = [
+  {
+    question: "会怎么收到视频？",
+    answer:
+      "支付成功后，24-48小时内，您将会从您购买时提供的邮箱里收到课程视频链接。如果您没有收到邮件，请检查您的邮件垃圾箱。",
+    open: true,
+  },
+  {
+    question: "能否下载付费视频？",
+    answer: "目前不支持下载付费视频。",
+  },
+];
 
 export default function AboutPage() {
   return (
@@ -35,23 +50,48 @@ export default function AboutPage() {
 
       <h1 className="my-10 text-2xl font-bold text-slate-600">购买须知</h1>
 
-      <section className="rounded-md bg-white px-5 py-4 shadow">
-        <article>
-          <h2 className="text-gray-600 text-base font-medium">
-            1. 会怎么收到视频？
-          </h2>
-          <p className="mt-3 text-gray-600 text-sm">
-            支付成功后，24-48小时内，您将会从您购买时提供的邮箱里收到课程视频链接。如果您没有收到邮件，请检查您的邮件垃圾箱。
-          </p>
-        </article>
-
-        <article className="mt-5">
-          <h2 className="text-gray-600 text-base font-medium">
-            2. 能否下载付费视频？
-          </h2>
-          <p className="mt-3 text-gray-600 text-sm">不能。</p>
-        </article>
-      </section>
+      <div className="rounded-md bg-white px-5 shadow">
+        <dl className="divide-y divide-gray-900/10">
+          {faqs.map((faq) => (
+            <Disclosure
+              as="div"
+              key={faq.question}
+              className="py-6"
+              defaultOpen={faq.open}
+            >
+              {({ open }) => (
+                <>
+                  <dt>
+                    <Disclosure.Button className="flex w-full items-start justify-between text-left text-slate-600">
+                      <span className="text-base font-semibold leading-7">
+                        {faq.question}
+                      </span>
+                      <span className="ml-6 flex h-7 items-center">
+                        {open ? (
+                          <MinusSmallIcon
+                            className="h-6 w-6"
+                            aria-hidden="true"
+                          />
+                        ) : (
+                          <PlusSmallIcon
+                            className="h-6 w-6"
+                            aria-hidden="true"
+                          />
+                        )}
+                      </span>
+                    </Disclosure.Button>
+                  </dt>
+                  <Disclosure.Panel as="dd" className="mt-2 pr-12">
+                    <p className="text-sm leading-7 text-slate-500">
+                      {faq.answer}
+                    </p>
+                  </Disclosure.Panel>
+                </>
+              )}
+            </Disclosure>
+          ))}
+        </dl>
+      </div>
     </div>
   );
 }
