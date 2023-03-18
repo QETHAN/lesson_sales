@@ -1,5 +1,7 @@
 import React from "react";
 import classNames from "classnames";
+import { Disclosure } from "@headlessui/react";
+import { MinusSmallIcon, PlusSmallIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import Head from "next/head";
 import BuyButton from "../../components/BuyButton";
@@ -23,22 +25,53 @@ const prices = [
   },
 ];
 
-const SunSvg = () => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    fill="none"
-    viewBox="0 0 24 24"
-    strokeWidth="1.5"
-    stroke="currentColor"
-    className="w-6 h-6 flex-shrink-0"
-  >
-    <path
-      strokeLinecap="round"
-      stroklinejoin="round"
-      d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
-    />
-  </svg>
-);
+const faqs = [
+  {
+    question: "Who are your private lessons for? 私教课为谁而设？",
+    answer: [
+      `They are for anyone who wants to level up their listening skills
+      and be able to understand real-life fast conversations.`,
+      `译：我的私教课程适合想要提高听力并能够听懂生活快速英语的学生。`,
+    ],
+    open: true,
+  },
+  {
+    question: "How much does your course cost? 你的课程费用是多少?",
+    answer: [
+      "1 lesson: USD $100",
+      "5 lessons: USD $300",
+      "10 lessons: USD $500",
+      "一节课程: 100美元",
+      "五节课程: 300美元",
+      "十节课程: 500美元",
+    ],
+    answerType: "list",
+    open: true,
+  },
+  {
+    question: "How long is each lesson? 一节课时长？",
+    answer: ["Each session is 60 minutes long.", "译：一节课60分钟。"],
+  },
+  {
+    question: "Will I be given homework? 课后会留作业吗？",
+    answer: [
+      "Yes, students will be given dictation exercises as homework.",
+      "译：是的。我会给您布置听力作业。",
+    ],
+  },
+  {
+    question: "How is the lesson conducted? 课程如何进行？",
+    answer: ["Lessons are conducted via Zoom.", "译：课程将通过Zoom进行。"],
+  },
+  {
+    question: "How do I schedule my lessons? 如何预约课程？",
+    answer: [
+      `To schedule your lessons, please leave a message in the
+      'Contact' section of my website.`,
+      "译：请在我的网站“联系”部分留言以安排您的课程时间。",
+    ],
+  },
+];
 
 export default function DetailPage() {
   const [selectedIndex, setSelectedIndex] = React.useState(0);
@@ -113,8 +146,8 @@ export default function DetailPage() {
               className={classNames(
                 "rounded-lg border group text-center cursor-pointer",
                 {
-                  "border-blue-600 shadow-lg": idx === selectedIndex,
-                  "borer-slate-400 hover:border-blue-600 hover:shadow-lg":
+                  "border-2 border-blue-600 shadow-lg": idx === selectedIndex,
+                  "borer-slate-400 hover:border-2 hover:border-blue-600 hover:shadow-lg":
                     idx !== selectedIndex,
                 }
               )}
@@ -151,94 +184,63 @@ export default function DetailPage() {
         </div>
       </div>
 
-      <div className="mt-10 rounded-md bg-white p-4 shadow">
-        <h2 className="text-slate-600 font-semibold text-xl">FAQ (常见问题)</h2>
-        <ul className="mt-10 text-slate-500 text-base space-y-10">
-          <li>
-            <h3 className="flex space-x-1 text-slate-600 font-semibold text-lg">
-              <SunSvg />
-              <span>Who are your private lessons for? 私教课为谁而设？</span>
-            </h3>
-            <div className="mt-4 sm:pl-7 space-y-4">
-              <p className="text-slate-500 text-base">
-                They are for anyone who wants to level up their listening skills
-                and be able to understand real-life fast conversations.
-              </p>
-              <p className="text-slate-500 text-base">
-                译：我的私教课程适合想要提高听力并能够听懂生活快速英语的学生。
-              </p>
-            </div>
-          </li>
-          <li>
-            <h3 className="flex space-x-1 text-slate-600 font-semibold text-lg">
-              <SunSvg />
-              <span>How much does your course cost? 你的课程费用是多少?</span>
-            </h3>
-            <ul className="mt-3 ml-4 pl-0 sm:pl-4 space-y-2 text-slate-500 list-disc">
-              <li>1 lesson: USD $100</li>
-              <li>5 lessons: USD $300</li>
-              <li>10 lessons: USD $500</li>
-              <li>一节课程: 100美元</li>
-              <li>五节课程: 300美元</li>
-              <li>十节课程: 500美元</li>
-            </ul>
-          </li>
-          <li>
-            <h3 className="flex space-x-1 text-slate-600 font-semibold text-lg">
-              <SunSvg />
-              <span>How long is each lesson? 一节课时长？</span>
-            </h3>
-            <div className="mt-4 sm:pl-7 space-y-4">
-              <p className="text-slate-500 text-base">
-                Each session is 60 minutes long.
-              </p>
-              <p className="text-slate-500 text-base">译：一节课60分钟。</p>
-            </div>
-          </li>
-          <li>
-            <h3 className="flex space-x-1 text-slate-600 font-semibold text-lg">
-              <SunSvg />
-              <span>Will I be given homework? 课后会留作业吗？</span>
-            </h3>
-            <div className="mt-4 sm:pl-7 space-y-4">
-              <p className="text-slate-500 text-base">
-                Yes, students will be given dictation exercises as homework.
-              </p>
-              <p className="text-slate-500 text-base">
-                译：是的。我会给您布置听力作业。
-              </p>
-            </div>
-          </li>
-          <li>
-            <h3 className="flex space-x-1 text-slate-600 font-semibold text-lg">
-              <SunSvg />
-              <span>How is the lesson conducted? 课程如何进行？</span>
-            </h3>
-            <div className="mt-4 sm:pl-7 space-y-4">
-              <p className="text-slate-500 text-base">
-                Lessons are conducted via Zoom.
-              </p>
-              <p className="text-slate-500 text-base">
-                译：课程将通过Zoom进行。
-              </p>
-            </div>
-          </li>
-          <li>
-            <h3 className="flex space-x-1 text-slate-600 font-semibold text-lg">
-              <SunSvg />
-              <span>How do I schedule my lessons? 如何预约课程？</span>
-            </h3>
-            <div className="mt-4 sm:pl-7 space-y-4">
-              <p className="text-slate-500 text-base">
-                To schedule your lessons, please leave a message in the
-                'Contact' section of my website.
-              </p>
-              <p className="text-slate-500 text-base">
-                译：请在我的网站“联系”部分留言以安排您的课程时间。
-              </p>
-            </div>
-          </li>
-        </ul>
+      <div className="mt-10 rounded-md bg-white px-4 shadow">
+        <h2 className="py-5 text-slate-600 font-semibold text-xl border-b border-gray-900/10">
+          FAQ (常见问题)
+        </h2>
+        <dl className="divide-y divide-gray-900/10">
+          {faqs.map((faq) => (
+            <Disclosure
+              as="div"
+              key={faq.question}
+              className="py-6"
+              defaultOpen={faq.open}
+            >
+              {({ open }) => (
+                <>
+                  <dt>
+                    <Disclosure.Button className="flex w-full items-start justify-between text-left text-slate-600">
+                      <span className="text-base font-semibold leading-7">
+                        {faq.question}
+                      </span>
+                      <span className="ml-6 flex h-7 items-center">
+                        {open ? (
+                          <MinusSmallIcon
+                            className="h-6 w-6"
+                            aria-hidden="true"
+                          />
+                        ) : (
+                          <PlusSmallIcon
+                            className="h-6 w-6"
+                            aria-hidden="true"
+                          />
+                        )}
+                      </span>
+                    </Disclosure.Button>
+                  </dt>
+                  <Disclosure.Panel as="dd" className="mt-2 pr-12">
+                    {faq.answerType === "list" ? (
+                      <ul className="mt-3 ml-4 space-y-2 text-sm text-slate-500 list-disc">
+                        {faq.answer.map((item, index) => (
+                          <li key={index}>{item}</li>
+                        ))}
+                      </ul>
+                    ) : (
+                      faq.answer.map((item, index) => (
+                        <p
+                          key={index}
+                          className="mt-2 text-sm leading-7 text-slate-500"
+                        >
+                          {item}
+                        </p>
+                      ))
+                    )}
+                  </Disclosure.Panel>
+                </>
+              )}
+            </Disclosure>
+          ))}
+        </dl>
       </div>
     </div>
   );
