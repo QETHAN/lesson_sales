@@ -32,7 +32,7 @@ export default function AboutPage() {
         />
         <meta
           name="keywords"
-          content="购买须知，常见问题，视频课程，HannahLin English"
+          content="Hannah Lin, 购买须知，常见问题，视频课程，HannahLin English"
         />
         <meta name="author" content="Hannah Lin" />
         <meta property="og:title" content="购买须知" />
