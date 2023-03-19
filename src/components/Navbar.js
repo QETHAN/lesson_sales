@@ -18,8 +18,14 @@ export default function Navbar({ children }) {
               私教课
             </a>
             <a
-              href="/about"
+              href="/listening"
               className="text-base text-slate-600 hover:text-slate-500"
+            >
+              听力
+            </a>
+            <a
+              href="/about"
+              className="hidden sm:block text-base text-slate-600 hover:text-slate-500"
             >
               关于
             </a>
