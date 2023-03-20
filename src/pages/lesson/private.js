@@ -4,6 +4,7 @@ import { Disclosure } from "@headlessui/react";
 import { MinusSmallIcon, PlusSmallIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import Head from "next/head";
+import Script from 'next/script'
 import BuyButton from "../../components/BuyButton";
 import { handleCheckout } from "../../utils/checkout";
 
@@ -109,6 +110,15 @@ export default function DetailPage() {
           content="本课程适合想要提高听力并能够听懂生活快速英语的学生。"
         />
       </Head>
+      <Script id="no-safari-cache" strategy="afterInteractive">
+        {`(function () {
+        window.onpageshow = function(event) {
+          if (event.persisted) {
+            window.location.reload();
+          }
+        };
+      })();`}
+      </Script>
       <h1 className="my-10 px-5 sm:px-0 text-2xl font-semibold text-slate-600">
         私教课
       </h1>

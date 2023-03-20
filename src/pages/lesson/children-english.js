@@ -4,6 +4,7 @@ import { Disclosure } from "@headlessui/react";
 import { MinusSmallIcon, PlusSmallIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import Head from "next/head";
+import Script from 'next/script'
 import BuyButton from "../../components/BuyButton";
 import { handleCheckout } from "../../utils/checkout";
 
@@ -169,6 +170,15 @@ export default function DetailPage() {
           content="本课程是为那些有3至6岁孩子的家长而设计的，这些家长希望在家里参与孩子的英语学习，同时创造一个环境让孩子每天都能听到英语。"
         />
       </Head>
+      <Script id="no-safari-cache" strategy="afterInteractive">
+        {`(function () {
+        window.onpageshow = function(event) {
+          if (event.persisted) {
+            window.location.reload();
+          }
+        };
+      })();`}
+      </Script>
       <h1 className="my-10 px-5 sm:px-0 text-2xl font-semibold text-slate-600">
         付费课程
       </h1>

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Head from "next/head";
+import Script from 'next/script'
 import BuyButton from "../../components/BuyButton";
 import { handleCheckout } from "../../utils/checkout";
 
@@ -54,6 +55,15 @@ export default function DetailPage() {
           而不是生硬的中式英语？"
         />
       </Head>
+      <Script id="no-safari-cache" strategy="afterInteractive">
+        {`(function () {
+        window.onpageshow = function(event) {
+          if (event.persisted) {
+            window.location.reload();
+          }
+        };
+      })();`}
+      </Script>
       <h1 className="my-10 px-5 sm:px-0 text-2xl font-semibold text-slate-600">
         付费课程
       </h1>
@@ -132,8 +142,8 @@ export default function DetailPage() {
           role="list"
           className="px-4 divide-y divide-gray-200 text-slate-500"
         >
-          {items.map((item) => (
-            <li key={item.id} className="py-4">
+          {items.map((item, index) => (
+            <li key={index} className="py-4">
               {item}
             </li>
           ))}
