@@ -14,7 +14,7 @@ export default function OrderCancel({ session }) {
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
         <meta
           name="description"
-          content="Improve your American English pronunciation, listening skills, and spoken English with our comprehensive guide. Learn how to speak like a native and communicate effectively in any situation."
+          content="Improve your American English pronunciation, listening skills, and spoken English with Hannah Lin. Learn how to speak like a native and communicate effectively in any situation."
         />
         <meta
           name="keywords"
@@ -30,7 +30,7 @@ export default function OrderCancel({ session }) {
         />
         <meta
           property="og:description"
-          content="Improve your American English pronunciation, listening skills, and spoken English with our comprehensive guide. Learn how to speak like a native and communicate effectively in any situation."
+          content="Improve your American English pronunciation, listening skills, and spoken English with Hannah Lin. Learn how to speak like a native and communicate effectively in any situation."
         />
       </Head>
 
