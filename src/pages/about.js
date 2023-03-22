@@ -38,7 +38,7 @@ export default function AboutPage() {
       <h1 className="my-10 text-2xl font-bold text-slate-600">About Hannah Lin</h1>
 
       <section className="rounded-md bg-white px-5 py-4 shadow">
-        <p className="mt-3 text-gray-700">
+        <p className="text-gray-700">
           我是Hannah Lin，2002年毕业于美国Biola 大学,
           获得TESOL硕士学位。在中国某大学英语系执教十多年后，2011年与家人一起移民加拿大。定居加拿大后曾在当地大学教授ESL英文，并持续辅导留学生及新老移民的口语及写作。
         </p>
