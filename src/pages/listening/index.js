@@ -1,47 +1,56 @@
 import Head from "next/head";
+import { useRouter } from "next/router";
 import { Disclosure } from "@headlessui/react";
 import { MinusSmallIcon, PlusSmallIcon } from "@heroicons/react/24/outline";
 import listeningData from "../../data/listening.json";
+import metaData from "../../data/meta.json";
+import data from "../../data/listening.json";
 
 export default function ListeningPage() {
+  const { locale } = useRouter();
+
+  const meta = {
+    "zh-cn": {
+      title: "英语听力练习",
+      description: "英语听力练习｜给那些真正想提高英语听力的人",
+    },
+    "zh-tw": {
+      title: "英語聽力練習",
+      description: "英語聽力練習｜給那些真正想提高英語聽力的人",
+    },
+  };
+
   return (
     <div className="container lg:max-w-screen-lg mx-auto px-5 lg:px-0 pb-1">
       <Head>
-        <title>英语听力练习</title>
+        <title>{meta[locale].title}</title>
         <meta charSet="UTF-8" />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1.0, user-scalable=0"
         />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
-        <meta
-          name="description"
-          content="英语听力练习｜给那些真正想提高英语听力的人"
-        />
-        <meta
-          name="keywords"
-          content="Hannah Lin, English lessons, online learning, grammar, vocabulary, pronunciation, 美式英语/英文听力, 美式英语口语, 美式英语发音技巧, 医学英语常用短语, 医学英语, 看病英语, 看医生英语"
-        />
+        <meta name="description" content={meta[locale].description} />
+        <meta name="keywords" content={metaData[locale].keywords} />
         <meta name="author" content="Hannah Lin" />
-        <meta property="og:title" content="关于我" />
+        <meta property="og:title" content={meta[locale].title} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://hannahlinenglish.com" />
         <meta
           property="og:image"
           content="https://hannahlinenglish.com/static/img/logo.png"
         />
-        <meta
-          property="og:description"
-          content="英语听力练习｜给那些真正想提高英语听力的人"
-        />
+        <meta property="og:description" content={meta[locale].description} />
       </Head>
 
       <article>
-        <h1 className="my-10 text-2xl font-bold text-slate-600">长听力</h1>
+        <h1 className="my-10 text-2xl font-bold text-slate-600">
+          {data[locale].longTitle}
+        </h1>
 
         <section className="mt-5 rounded-md bg-white px-5 shadow">
           <dl className="divide-y divide-gray-900/10">
-            {listeningData.long.map((item, index) => (
+            {listeningData[locale].long.reverse().map((item, index) => (
               <Disclosure
                 as="div"
                 key={index}
@@ -101,11 +110,13 @@ export default function ListeningPage() {
       </article>
 
       <article>
-        <h1 className="my-10 text-2xl font-bold text-slate-600">短听力</h1>
+        <h1 className="my-10 text-2xl font-bold text-slate-600">
+          {data[locale].shortTitle}
+        </h1>
 
         <section className="mt-5 rounded-md bg-white px-5 shadow">
           <dl className="divide-y divide-gray-900/10">
-            {listeningData.short.reverse().map((item, index) => {
+            {listeningData[locale].short.reverse().map((item, index) => {
               return (
                 <Disclosure
                   as="div"

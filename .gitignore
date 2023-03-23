@@ -5,3 +5,4 @@
 .env*.local
 ecosystem.config.js
 package-lock.json
+pnpm-lock.yaml

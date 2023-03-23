@@ -1,0 +1,16 @@
+{
+  "zh-cn": [
+    { "name": "首页", "href": "/" },
+    { "name": "私教课", "href": "/lesson/private" },
+    { "name": "听力", "href": "/listening" },
+    { "name": "关于", "href": "/about" },
+    { "name": "FAQ", "href": "/faq/necessary" }
+  ],
+  "zh-tw": [
+    { "name": "首頁", "href": "/" },
+    { "name": "私教課", "href": "/lesson/private" },
+    { "name": "聽力", "href": "/listening" },
+    { "name": "關於", "href": "/about" },
+    { "name": "FAQ", "href": "/faq/necessary" }
+  ]
+}

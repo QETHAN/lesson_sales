@@ -1,0 +1,42 @@
+{
+  "zh-cn": {
+    "selectLang": "选择语言",
+    "social": "社交",
+    "about": "关于",
+    "contact": "联系",
+    "buyNotice": "购买须知",
+    "faq": "常见问题",
+    "buyLessons": "购买课程",
+    "paidCourse": "付费课程",
+    "lessonDesc": "课程描述",
+    "lessonCatalog": "课程目录",
+    "price": "价格",
+    "buy": "购买",
+    "goPay": "正在跳转支付",
+    "privateCourse": "私教课",
+    "notPublished": "暂未公布",
+    "orderCancel": "购买取消",
+    "orderSuccess": "购买成功",
+    "contactMe": "联系我"
+  },
+  "zh-tw": {
+    "selectLang": "選擇語言",
+    "social": "社交",
+    "about": "關於",
+    "contact": "聯繫",
+    "buyNotice": "購買須知",
+    "faq": "常見問題",
+    "buyLessons": "購買課程",
+    "paidCourse": "付費課程",
+    "lessonDesc": "課程描述",
+    "lessonCatalog": "課程目錄",
+    "price": "價格",
+    "buy": "購買",
+    "goPay": "正在跳轉支付",
+    "privateCourse": "私教課",
+    "notPublished": "暫未公布",
+    "orderCancel": "購買取消",
+    "orderSuccess": "購買成功",
+    "contactMe": "聯繫我"
+  }
+}

@@ -1,41 +1,94 @@
 {
-  "最新课程": [
+  "zh-cn": [
     {
-      "title": "Unlocking the Power of Multi-Meaning Phrasal Verbs in spoken English: Mastering Common Usage",
-      "subTitle": "解锁英语口语中多义动词短语的力量：掌握常用用法",
-      "image": "/static/img/cover/phrasal-verbs.jpg",
-      "link": "/lesson/multi-meaning-phrasal-verbs-in-english",
-      "slug": "multi-meaning-phrasal-verbs-in-english",
-      "tag": "日常英语",
-      "uiType": "single"
+      "header": "最新课程",
+      "content": [
+        {
+          "title": "Unlocking the Power of Multi-Meaning Phrasal Verbs in spoken English: Mastering Common Usage",
+          "subTitle": "解锁英语口语中多义动词短语的力量：掌握常用用法",
+          "image": "/static/img/cover/phrasal-verbs.jpg",
+          "link": "/lesson/multi-meaning-phrasal-verbs-in-english",
+          "slug": "multi-meaning-phrasal-verbs-in-english",
+          "tag": "日常英语",
+          "uiType": "single"
+        },
+        {
+          "title": "Unlocking Everyday English Grammar: Real-Life Situations and Common Usage",
+          "subTitle": "揭秘日常英语语法：真实场景下的常用语法",
+          "image": "/static/img/cover/everyday-english.jpg",
+          "link": "/lesson/everyday-english-grammar",
+          "slug": "everyday-english-grammar",
+          "tag": "日常英语"
+        },
+        {
+          "title": "Spark Your Child's English Language Potential for Lifelong Benefits - Mom is the Super Coach for Creating the Best English Learning Environment!",
+          "subTitle": "点燃孩子英语潜能，让TA终生受益 - 妈妈是打造最佳英语学习环境的超级教练",
+          "image": "/static/img/cover/children-english.jpg",
+          "link": "/lesson/children-english",
+          "slug": "children-english",
+          "tag": "亲子英语"
+        }
+      ]
     },
     {
-      "title": "Unlocking Everyday English Grammar: Real-Life Situations and Common Usage",
-      "subTitle": "揭秘日常英语语法：真实场景下的常用语法",
-      "image": "/static/img/cover/everyday-english.jpg",
-      "link": "/lesson/everyday-english-grammar",
-      "slug": "everyday-english-grammar",
-      "tag": "日常英语"
-    },
-    {
-      "title": "Spark Your Child's English Language Potential for Lifelong Benefits - Mom is the Super Coach for Creating the Best English Learning Environment!",
-      "subTitle": "点燃孩子英语潜能，让TA终生受益 - 妈妈是打造最佳英语学习环境的超级教练",
-      "image": "/static/img/cover/children-english.jpg",
-      "link": "/lesson/children-english",
-      "slug": "children-english",
-      "tag": "亲子英语"
+      "header": "私教课",
+      "content": [
+        {
+          "title": "Private one-on-one coaching for improving listening skills and American English pronunciation",
+          "subTitle": "一对一私教（提高听力技能和美国英语发音）",
+          "image": "/static/img/cover/private.jpg",
+          "link": "/lesson/private",
+          "slug": "private",
+          "tag": "私教英语课",
+          "uiType": "single"
+        }
+      ]
     }
   ],
-  "私教课": [
+  "zh-tw": [
     {
-      "title": "Private one-on-one coaching for improving listening skills and American English pronunciation",
-      "subTitle": "一对一私教（提高听力技能和美国英语发音）",
-      "image": "/static/img/cover/private.jpg",
-      "link": "/lesson/private",
-      "slug": "private",
-      "tag": "私教英语课",
-      "uiType": "single"
+      "header": "最新課程",
+      "content": [
+        {
+          "title": "Unlocking the Power of Multi-Meaning Phrasal Verbs in spoken English: Mastering Common Usage",
+          "subTitle": "解鎖英語口語中多義動詞短語的力量：掌握常用用法",
+          "image": "/static/img/cover/phrasal-verbs.jpg",
+          "link": "/lesson/multi-meaning-phrasal-verbs-in-english",
+          "slug": "multi-meaning-phrasal-verbs-in-english",
+          "tag": "日常英語",
+          "uiType": "single"
+        },
+        {
+          "title": "Unlocking Everyday English Grammar: Real-Life Situations and Common Usage",
+          "subTitle": "揭秘日常英語語法：真實場景下的常用語法",
+          "image": "/static/img/cover/everyday-english.jpg",
+          "link": "/lesson/everyday-english-grammar",
+          "slug": "everyday-english-grammar",
+          "tag": "日常英語"
+        },
+        {
+          "title": "Spark Your Child's English Language Potential for Lifelong Benefits - Mom is the Super Coach for Creating the Best English Learning Environment!",
+          "subTitle": "點燃孩子英語潛能，讓TA終生受益 - 媽媽是打造最佳英語學習環境的超級教練",
+          "image": "/static/img/cover/children-english.jpg",
+          "link": "/lesson/children-english",
+          "slug": "children-english",
+          "tag": "親子英語"
+        }
+      ]
+    },
+    {
+      "header": "私教課",
+      "content": [
+        {
+          "title": "Private one-on-one coaching for improving listening skills and American English pronunciation",
+          "subTitle": "一對一私教（提高聽力技能和美國英語發音）",
+          "image": "/static/img/cover/private.jpg",
+          "link": "/lesson/private",
+          "slug": "private",
+          "tag": "私教英語课",
+          "uiType": "single"
+        }
+      ]
     }
   ]
 }
-  

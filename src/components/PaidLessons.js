@@ -1,25 +1,30 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/router";
 import data from "../data/paid_lessons.json";
 
 export default function PaidLessons() {
+  const { locale, locales, defaultLocale, asPath } = useRouter();
+
   return (
     <div className="container lg:max-w-screen-lg mx-auto px-5 lg:px-0">
-      {Object.keys(data).map((key, idx) => {
+      {data[locale].map((block, idx) => {
         return <section key={idx}>
-          <h1 className="my-10 text-2xl font-bold text-slate-600">{key}</h1>
+          <h1 className="my-10 text-2xl font-bold text-slate-600">{block.header}</h1>
           <ul className="flex flex-col sm:flex-row space-y-5 flex-wrap justify-between">
-            {data[key].map((item, index) => {
+            {block.content.map((item, index) => {
               if (item.uiType === "single") {
                 return (
                   <li
                     key={index}
                     className="rounded-2xl overflow-hidden bg-white basis-[100%] shadow rotate-0"
                   >
-                    <a
+                    <Link
                       className="flex flex-col lg:flex-row"
                       href={item.link}
                       aria-label={item.subTitle}
+                      locale={locale}
                     >
                       <div
                         className="sm:basis-[65%] overflow-hidden"
@@ -42,7 +47,7 @@ export default function PaidLessons() {
                           {item.subTitle}
                         </h3>
                       </div>
-                    </a>
+                    </Link>
                   </li>
                 );
               } else {
@@ -51,10 +56,11 @@ export default function PaidLessons() {
                     key={index}
                     className="basis-[calc(50%-10px)] rounded-2xl overflow-hidden bg-white shadow rotate-0"
                   >
-                    <a
+                    <Link
                       className="flex flex-col"
                       href={item.link}
                       aria-label={item.subTitle}
+                      locale={locale}
                     >
                       <div
                         className="basis-[65%] overflow-hidden"
@@ -77,7 +83,7 @@ export default function PaidLessons() {
                           {item.subTitle}
                         </h3>
                       </div>
-                    </a>
+                    </Link>
                   </li>
                 );
               }
