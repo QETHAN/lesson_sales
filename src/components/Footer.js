@@ -1,8 +1,9 @@
+import Link from "next/link";
 import { useRouter } from "next/router";
 import lang from "../data/lang.json";
 
-export default function Footer({ children }) {
-  const { locale, locales, defaultLocale, asPath } = useRouter();
+export default function Footer() {
+  const { locale } = useRouter();
   return (
     <footer className="py-5 bg-[#f5f5f7]">
       <div className="container lg:max-w-screen-lg mx-auto px-5 lg:px-0">
@@ -19,7 +20,9 @@ export default function Footer({ children }) {
           </section>
 
           <section>
-            <h4 className="font-medium text-base text-gray-600">{lang[locale].social}</h4>
+            <h4 className="font-medium text-base text-gray-600">
+              {lang[locale].social}
+            </h4>
 
             <div className="text-gray-400 hover:text-gray-500 text-sm mt-3 flex flex-col space-y-3">
               <a href="https://www.youtube.com/@HannahLinEnglish">YouTube</a>
@@ -27,18 +30,26 @@ export default function Footer({ children }) {
           </section>
 
           <section>
-            <h4 className="font-medium text-base text-gray-600">{lang[locale].about}</h4>
+            <h4 className="font-medium text-base text-gray-600">
+              {lang[locale].about}
+            </h4>
 
             <div className="mt-3 text-gray-400 hover:text-gray-500 text-sm">
-              <a href="/about">Hannah Lin</a>
+              <Link href="/about" locale={locale}>
+                Hannah Lin
+              </Link>
             </div>
           </section>
 
           <section>
-            <h4 className="font-medium text-base text-gray-600">{lang[locale].contact}</h4>
+            <h4 className="font-medium text-base text-gray-600">
+              {lang[locale].contact}
+            </h4>
 
             <div className="mt-3 text-gray-400 hover:text-gray-500 text-sm">
-              <a href="/contact">Contact</a>
+              <Link href="/contact" locale={locale}>
+                Contact
+              </Link>
             </div>
           </section>
 
@@ -46,7 +57,9 @@ export default function Footer({ children }) {
             <h4 className="font-medium text-base text-gray-600">FAQ</h4>
 
             <div className="mt-3 text-gray-400 hover:text-gray-500 text-sm">
-              <a href="/faq/necessary">{lang[locale].buyNotice}</a>
+              <Link href="/faq/necessary" locale={locale}>
+                {lang[locale].buyNotice}
+              </Link>
             </div>
           </section>
         </div>
