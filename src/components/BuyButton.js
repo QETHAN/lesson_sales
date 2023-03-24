@@ -1,7 +1,8 @@
 import React from "react";
 import classNames from "classnames";
+import lang from "../data/lang.json";
 
-const BuyButton = ({ onClick }) => {
+const BuyButton = ({ onClick, locale }) => {
   const [isLoading, setIsLoading] = React.useState(false);
 
   const handleClick = () => {
@@ -43,7 +44,7 @@ const BuyButton = ({ onClick }) => {
           ></path>
         </svg>
       )}
-      {isLoading ? "正在跳转支付..." : "购买"}{" "}
+      {isLoading ? `${lang[locale].goPay}...` : lang[locale].buy}
     </button>
   );
 };

@@ -1,53 +1,104 @@
 {
-  "long": [
-    {
-      "title": "第255期 Listening practice | For those who truly want to work on their listening skills",
-      "url": "https://www.youtube.com/watch?v=9YXSqkjVmNg",
-      "answer": [
-        "<p><span class=\"bg-gray-100 font-medium\">It’s a great way</span> to make <span class=\"text-red-400\">three</span> hundred bucks <span class=\"text-green-400\">(=dollars)</span>.</p>",
-        "<p>But <span class=\"bg-gray-100 font-medium\">it’s a great way</span> to <span class=\"text-green-400\">pay the bills</span>. So…</p>",
-        "<p> I’m just doing some breathing exercises. I teach them <span class=\"text-red-400\">to</span> (<span class=\"text-red-400\">/tə/</span>) all my clients. <span class=\"bg-gray-100 font-medium\">It’s a great way</span> to let go of some anxiety.</p>",
-        "<p>I like rid<span class=\"text-red-400\">ing</span> <span class=\"text-red-400\">(weak sound)</span> the 10-speed because it’s fun, uh, gives you energy, and <span class=\"bg-gray-100 font-medium\">it’s a great way</span> to <span class=\"text-green-400\">stay in shape</span>.</p>"
-      ]
-    }
-  ],
-  "short": [
-    {
-      "title": "Episode 19",
-      "url": "https://www.youtube.com/shorts/shDt6FzGfUU",
-      "answer": [
-        "<p>What is <span class=\"text-red-400\">it</span> exactly that you want?</p>",
-        "<p>Family.</p>"
-      ]
-    },
-    {
-      "title": "Episode 20",
-      "url": "https://www.youtube.com/shorts/qvyXSUScLUo",
-      "answer": [
-        "<p>What exactly is <span class=\"text-red-400\">it</span> that you want? Mr.Tribbles?</p>",
-        "<p>I want you, Gordon.</p>"
-      ]
-    },
-    {
-      "title": "Episode 21",
-      "url": "https://www.youtube.com/shorts/cV8rwsqvjkw",
-      "answer": [
-        "<p>What exactly is <span class=\"text-red-400\">it</span> that she needs?</p>"
-      ]
-    },
-    {
-      "title": "Episode 22",
-      "url": "https://www.youtube.com/shorts/oJkbdZUYSCk",
-      "answer": [
-        "<p>暂未公布</p>"
-      ]
-    },
-    {
-      "title": "Episode 23",
-      "url": "https://www.youtube.com/shorts/7QTcSU4Pr9U",
-      "answer": [
-        "<p>暂未公布</p>"
-      ]
-    }
-  ]
+  "zh-cn": {
+    "shortTitle": "短听力",
+    "longTitle": "长听力", 
+    "long": [
+      {
+        "title": "第255期 Listening practice | For those who truly want to work on their listening skills",
+        "url": "https://www.youtube.com/watch?v=9YXSqkjVmNg",
+        "answer": [
+          "<p><span class=\"bg-gray-100 font-medium\">It’s a great way</span> to make <span class=\"text-red-400\">three</span> hundred bucks <span class=\"text-green-400\">(=dollars)</span>.</p>",
+          "<p>But <span class=\"bg-gray-100 font-medium\">it’s a great way</span> to <span class=\"text-green-400\">pay the bills</span>. So…</p>",
+          "<p> I’m just doing some breathing exercises. I teach them <span class=\"text-red-400\">to</span> (<span class=\"text-red-400\">/tə/</span>) all my clients. <span class=\"bg-gray-100 font-medium\">It’s a great way</span> to let go of some anxiety.</p>",
+          "<p>I like rid<span class=\"text-red-400\">ing</span> <span class=\"text-red-400\">(weak sound)</span> the 10-speed because it’s fun, uh, gives you energy, and <span class=\"bg-gray-100 font-medium\">it’s a great way</span> to <span class=\"text-green-400\">stay in shape</span>.</p>"
+        ]
+      }
+    ],
+    "short": [
+      {
+        "title": "Episode 19",
+        "url": "https://www.youtube.com/shorts/shDt6FzGfUU",
+        "answer": [
+          "<p>What is <span class=\"text-red-400\">it</span> exactly that you want?</p>",
+          "<p>Family.</p>"
+        ]
+      },
+      {
+        "title": "Episode 20",
+        "url": "https://www.youtube.com/shorts/qvyXSUScLUo",
+        "answer": [
+          "<p>What exactly is <span class=\"text-red-400\">it</span> that you want? Mr.Tribbles?</p>",
+          "<p>I want you, Gordon.</p>"
+        ]
+      },
+      {
+        "title": "Episode 21",
+        "url": "https://www.youtube.com/shorts/cV8rwsqvjkw",
+        "answer": [
+          "<p>What exactly is <span class=\"text-red-400\">it</span> that she needs?</p>"
+        ]
+      },
+      {
+        "title": "Episode 22",
+        "url": "https://www.youtube.com/shorts/oJkbdZUYSCk",
+        "answer": ["<p>暂未公布</p>"]
+      },
+      {
+        "title": "Episode 23",
+        "url": "https://www.youtube.com/shorts/7QTcSU4Pr9U",
+        "answer": ["<p>暂未公布</p>"]
+      }
+    ]
+  },
+  "zh-tw": {
+    "shortTitle": "短聽力",
+    "longTitle": "長聽力",
+    "long": [
+      {
+        "title": "第255期 Listening practice | For those who truly want to work on their listening skills",
+        "url": "https://www.youtube.com/watch?v=9YXSqkjVmNg",
+        "answer": [
+          "<p><span class=\"bg-gray-100 font-medium\">It’s a great way</span> to make <span class=\"text-red-400\">three</span> hundred bucks <span class=\"text-green-400\">(=dollars)</span>.</p>",
+          "<p>But <span class=\"bg-gray-100 font-medium\">it’s a great way</span> to <span class=\"text-green-400\">pay the bills</span>. So…</p>",
+          "<p> I’m just doing some breathing exercises. I teach them <span class=\"text-red-400\">to</span> (<span class=\"text-red-400\">/tə/</span>) all my clients. <span class=\"bg-gray-100 font-medium\">It’s a great way</span> to let go of some anxiety.</p>",
+          "<p>I like rid<span class=\"text-red-400\">ing</span> <span class=\"text-red-400\">(weak sound)</span> the 10-speed because it’s fun, uh, gives you energy, and <span class=\"bg-gray-100 font-medium\">it’s a great way</span> to <span class=\"text-green-400\">stay in shape</span>.</p>"
+        ]
+      }
+    ],
+    "short": [
+      {
+        "title": "Episode 19",
+        "url": "https://www.youtube.com/shorts/shDt6FzGfUU",
+        "answer": [
+          "<p>What is <span class=\"text-red-400\">it</span> exactly that you want?</p>",
+          "<p>Family.</p>"
+        ]
+      },
+      {
+        "title": "Episode 20",
+        "url": "https://www.youtube.com/shorts/qvyXSUScLUo",
+        "answer": [
+          "<p>What exactly is <span class=\"text-red-400\">it</span> that you want? Mr.Tribbles?</p>",
+          "<p>I want you, Gordon.</p>"
+        ]
+      },
+      {
+        "title": "Episode 21",
+        "url": "https://www.youtube.com/shorts/cV8rwsqvjkw",
+        "answer": [
+          "<p>What exactly is <span class=\"text-red-400\">it</span> that she needs?</p>"
+        ]
+      },
+      {
+        "title": "Episode 22",
+        "url": "https://www.youtube.com/shorts/oJkbdZUYSCk",
+        "answer": ["<p>暫未公布</p>"]
+      },
+      {
+        "title": "Episode 23",
+        "url": "https://www.youtube.com/shorts/7QTcSU4Pr9U",
+        "answer": ["<p>暫未公布</p>"]
+      }
+    ]
+  }
 }

@@ -1,0 +1,104 @@
+{
+  "zh-cn": {
+    "title": "一对一私教（提高听力技能和美国英语发音）",
+    "faqs": [
+      {
+        "question": "Who are your private lessons for? 私教课为谁而设？",
+        "answer": [
+          "They are for anyone who wants to level up their listening skills and be able to understand real-life fast conversations.",
+          "译：我的私教课程适合想要提高听力并能够听懂生活快速英语的学生。"
+        ],
+        "open": true
+      },
+      {
+        "question": "How much does your course cost? 你的课程费用是多少?",
+        "answer": [
+          "1 lesson: USD $100",
+          "5 lessons: USD $300",
+          "10 lessons: USD $500",
+          "一节课程: 100美元",
+          "五节课程: 300美元",
+          "十节课程: 500美元"
+        ],
+        "answerType": "list",
+        "open": true
+      },
+      {
+        "question": "How long is each lesson? 一节课时长？",
+        "answer": ["Each session is 60 minutes long.", "译：一节课60分钟。"]
+      },
+      {
+        "question": "Will I be given homework? 课后会留作业吗？",
+        "answer": [
+          "Yes, students will be given dictation exercises as homework.",
+          "译：是的。我会给您布置听力作业。"
+        ]
+      },
+      {
+        "question": "How is the lesson conducted? 课程如何进行？",
+        "answer": [
+          "Lessons are conducted via Zoom.",
+          "译：课程将通过Zoom进行。"
+        ]
+      },
+      {
+        "question": "How do I schedule my lessons? 如何预约课程？",
+        "answer": [
+          "To schedule your lessons, please leave a message in the 'Contact' section of my website.",
+          "译：请在我的网站“联系”部分留言以安排您的课程时间。"
+        ]
+      }
+    ]
+  },
+  "zh-tw": {
+    "title": "一對一私教（提高聽力技能和美國英語發音）",
+    "faqs": [
+      {
+        "question": "Who are your private lessons for? 私教課為誰而設？",
+        "answer": [
+          "They are for anyone who wants to level up their listening skills and be able to understand real-life fast conversations.",
+          "譯：我的私教課程適合想要提高聽力並能夠聽懂生活快速英語的學生。"
+        ],
+        "open": true
+      },
+      {
+        "question": "How much does your course cost? 你的課程費用是多少?",
+        "answer": [
+          "1 lesson: USD $100",
+          "5 lessons: USD $300",
+          "10 lessons: USD $500",
+          "一節課程: 100美元",
+          "五節課程: 300美元",
+          "十節課程: 500美元"
+        ],
+        "answerType": "list",
+        "open": true
+      },
+      {
+        "question": "How long is each lesson? 一節課時長？",
+        "answer": ["Each session is 60 minutes long.", "譯：一節課60分鐘。"]
+      },
+      {
+        "question": "Will I be given homework? 課後會留作業嗎？",
+        "answer": [
+          "Yes, students will be given dictation exercises as homework.",
+          "譯：是的。我會給您布置聽力作業。"
+        ]
+      },
+      {
+        "question": "How is the lesson conducted? 課程如何進行？",
+        "answer": [
+          "Lessons are conducted via Zoom.",
+          "譯：課程將通過Zoom進行。"
+        ]
+      },
+      {
+        "question": "How do I schedule my lessons? 如何預約課程？",
+        "answer": [
+          "To schedule your lessons, please leave a message in the 'Contact' section of my website.",
+          "譯：請在我的網站「聯系」部分留言以安排您的課程時間。"
+        ]
+      }
+    ]
+  }
+}

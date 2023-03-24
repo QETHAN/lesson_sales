@@ -1,5 +1,10 @@
 import classNames from "classnames";
-import React from "react";
+import React, { Fragment } from "react";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import { Menu, Transition } from "@headlessui/react";
+import { ChevronDownIcon } from "@heroicons/react/20/solid";
+import data from "../data/nav.json";
 
 const MenuIcon = () => (
   <svg
@@ -18,15 +23,8 @@ const MenuIcon = () => (
   </svg>
 );
 
-const links = [
-  { name: "首页", href: "/" },
-  { name: "私教课", href: "/lesson/private" },
-  { name: "听力", href: "/listening" },
-  { name: "关于", href: "/about" },
-  { name: "FAQ", href: "/faq/necessary" },
-];
-
 export default function Navbar({ children }) {
+  const { locale, asPath } = useRouter();
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   const handleToggleMenu = () => {
@@ -49,22 +47,83 @@ export default function Navbar({ children }) {
                 className="h-10"
               />
             </a>
-            <div className="hidden sm:flex items-center space-x-6">
-              {links.map((link, index) => (
-                <a
-                  key={index}
-                  href={link.href}
-                  className="text-base text-slate-600 hover:text-slate-500"
+            <div className="flex space-x-6 items-center">
+              <div className="hidden sm:flex items-center space-x-6">
+                {data[locale].map((link, index) => (
+                  <Link
+                    key={index}
+                    href={link.href}
+                    className="text-base text-slate-600 hover:text-slate-500"
+                    locale={locale}
+                  >
+                    {link.name}
+                  </Link>
+                ))}
+              </div>
+              <Menu as="div" className="relative inline-block text-left">
+                <div>
+                  <Menu.Button className="inline-flex w-full justify-center rounded-md hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
+                    <div className="flex space-x-1 items-center text-base text-slate-600 hover:text-slate-500">
+                      <span className="hidden sm:inline-block">
+                        {locale === "zh-cn" ? "简体中文" : "繁體中文"}
+                      </span>
+                      <span className="sm:hidden">
+                        {locale === "zh-cn" ? "简体" : "繁體"}
+                      </span>
+                      <ChevronDownIcon
+                        className="ml-2 -mr-1 h-5 w-5"
+                        aria-hidden="true"
+                      />
+                    </div>
+                  </Menu.Button>
+                </div>
+                <Transition
+                  as={Fragment}
+                  enter="transition ease-out duration-100"
+                  enterFrom="transform opacity-0 scale-95"
+                  enterTo="transform opacity-100 scale-100"
+                  leave="transition ease-in duration-75"
+                  leaveFrom="transform opacity-100 scale-100"
+                  leaveTo="transform opacity-0 scale-95"
                 >
-                  {link.name}
-                </a>
-              ))}
-            </div>
-            <div
-              className="sm:hidden text-slate-500 hover:bg-gray-100 p-1 rounded"
-              onClick={handleToggleMenu}
-            >
-              <MenuIcon />
+                  <Menu.Items className="absolute right-0 mt-2 w-[100px] origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                    <div className="px-1 py-1 text-center">
+                      <Menu.Item>
+                        {({ active }) => (
+                          <Link
+                            className="w-full text-sm text-slate-600 hover:text-slate-500"
+                            activeClassName={active && locale === "zh-cn"}
+                            href={asPath}
+                            locale="zh-cn"
+                          >
+                            简体中文
+                          </Link>
+                        )}
+                      </Menu.Item>
+                    </div>
+                    <div className="px-1 py-1 text-center">
+                      <Menu.Item>
+                        {({ active }) => (
+                          <Link
+                            className="w-full text-sm text-slate-600 hover:text-slate-500"
+                            activeClassName={active && locale === "zh-tw"}
+                            href={asPath}
+                            locale="zh-tw"
+                          >
+                            繁體中文
+                          </Link>
+                        )}
+                      </Menu.Item>
+                    </div>
+                  </Menu.Items>
+                </Transition>
+              </Menu>
+              <div
+                className="sm:hidden text-slate-500 hover:bg-gray-100 p-1 rounded"
+                onClick={handleToggleMenu}
+              >
+                <MenuIcon />
+              </div>
             </div>
           </div>
         </nav>
@@ -73,18 +132,19 @@ export default function Navbar({ children }) {
       {isMenuOpen && (
         <>
           <div
-            className="fixed inset-0 bg-black opacity-25 z-40"
+            className="sm:hidden fixed inset-0 bg-black opacity-25 z-40"
             onClick={() => setIsMenuOpen(false)}
           ></div>
           <nav className="sm:hidden fixed top-[72px] inset-x-0 z-50 py-2 bg-white border-t border-gray-100">
-            {links.map((link, index) => (
-              <a
+            {data[locale].map((link, index) => (
+              <Link
                 key={index}
                 href={link.href}
                 className="block px-4 py-2 text-base text-slate-600 hover:text-slate-500 hover:bg-gray-100"
+                locale={locale}
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
           </nav>
         </>

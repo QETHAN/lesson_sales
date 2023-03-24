@@ -4,9 +4,13 @@ import { Disclosure } from "@headlessui/react";
 import { MinusSmallIcon, PlusSmallIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import Head from "next/head";
-import Script from 'next/script'
+import Script from "next/script";
+import { useRouter } from "next/router";
 import BuyButton from "../../components/BuyButton";
 import { handleCheckout } from "../../utils/checkout";
+import lang from "../../data/lang.json";
+import data from "../../data/lesson/private.json";
+import metaData from "../../data/meta.json";
 
 const prices = [
   {
@@ -26,60 +30,22 @@ const prices = [
   },
 ];
 
-const faqs = [
-  {
-    question: "Who are your private lessons for? 私教课为谁而设？",
-    answer: [
-      `They are for anyone who wants to level up their listening skills
-      and be able to understand real-life fast conversations.`,
-      `译：我的私教课程适合想要提高听力并能够听懂生活快速英语的学生。`,
-    ],
-    open: true,
+const meta = {
+  "zh-cn": {
+    "description": "本课程适合想要提高听力并能够听懂生活快速英语的学生。",
   },
-  {
-    question: "How much does your course cost? 你的课程费用是多少?",
-    answer: [
-      "1 lesson: USD $100",
-      "5 lessons: USD $300",
-      "10 lessons: USD $500",
-      "一节课程: 100美元",
-      "五节课程: 300美元",
-      "十节课程: 500美元",
-    ],
-    answerType: "list",
-    open: true,
-  },
-  {
-    question: "How long is each lesson? 一节课时长？",
-    answer: ["Each session is 60 minutes long.", "译：一节课60分钟。"],
-  },
-  {
-    question: "Will I be given homework? 课后会留作业吗？",
-    answer: [
-      "Yes, students will be given dictation exercises as homework.",
-      "译：是的。我会给您布置听力作业。",
-    ],
-  },
-  {
-    question: "How is the lesson conducted? 课程如何进行？",
-    answer: ["Lessons are conducted via Zoom.", "译：课程将通过Zoom进行。"],
-  },
-  {
-    question: "How do I schedule my lessons? 如何预约课程？",
-    answer: [
-      `To schedule your lessons, please leave a message in the
-      'Contact' section of my website.`,
-      "译：请在我的网站“联系”部分留言以安排您的课程时间。",
-    ],
-  },
-];
+  "zh-tw": {
+    "description": "本課程適合想要提高聽力並能夠聽懂生活快速英語的學生。",
+  }
+}
 
 export default function DetailPage() {
+  const { locale } = useRouter();
   const [selectedIndex, setSelectedIndex] = React.useState(0);
   return (
     <div className="container lg:max-w-screen-lg mx-auto sm:px-5 lg:px-0">
       <Head>
-        <title>一对一私教（提高听力技能和美国英语发音）</title>
+        <title>{data[locale].title}</title>
         <meta charSet="UTF-8" />
         <meta
           name="viewport"
@@ -88,16 +54,16 @@ export default function DetailPage() {
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
         <meta
           name="description"
-          content="本课程适合想要提高听力并能够听懂生活快速英语的学生。"
+          content={meta[locale].description}
         />
         <meta
           name="keywords"
-          content="Hannah Lin, English lessons, online learning, grammar, vocabulary, pronunciation, 美式英语/英文听力, 美式英语口语, 美式英语发音技巧, 医学英语常用短语, 医学英语, 看病英语, 看医生英语"
+          content={metaData[locale].keywords}
         />
         <meta name="author" content="Hannah Lin" />
         <meta
           property="og:title"
-          content="一对一私教（提高听力技能和美国英语发音）"
+          content={data[locale].title}
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://hannahlinenglish.com" />
@@ -107,7 +73,7 @@ export default function DetailPage() {
         />
         <meta
           property="og:description"
-          content="本课程适合想要提高听力并能够听懂生活快速英语的学生。"
+          content={meta[locale].description}
         />
       </Head>
       <Script id="no-safari-cache" strategy="afterInteractive">
@@ -120,14 +86,14 @@ export default function DetailPage() {
       })();`}
       </Script>
       <h1 className="my-10 px-5 sm:px-0 text-2xl font-semibold text-slate-600">
-        私教课
+        {lang[locale].privateCourse}
       </h1>
       <div className="flex flex-col lg:flex-row bg-white sm:rounded-2xl shadow overflow-hidden">
         <figure className="lg:max-w-[65%] overflow-hidden">
           <Image
             className="w-full h-full object-fill"
             src="/static/img/cover/private.jpg"
-            alt="一对一私教（提高听力技能和美国英语发音）"
+            alt={data[locale].title}
             width="666"
             height="384"
             priority
@@ -141,14 +107,14 @@ export default function DetailPage() {
               American English pronunciation.
             </h1>
             <h2 className="mt-2 text-slate-500 font-medium text-lg">
-              一对一私教（提高听力技能和美国英语发音）
+              {data[locale].title}
             </h2>
           </div>
         </div>
       </div>
 
       <div className="mt-10 rounded-md bg-white p-4 shadow">
-        <h2 className="text-slate-600 font-semibold text-xl">购买课程</h2>
+        <h2 className="text-slate-600 font-semibold text-xl">{lang[locale].buyLessons}</h2>
         <ul className="mt-5 grid grid-cols-1 gap-y-5 sm:grid-cols-3 sm:gap-y-0 sm:gap-x-5">
           {prices.map((item, idx) => (
             <li
@@ -190,16 +156,17 @@ export default function DetailPage() {
               priceId: prices[selectedIndex].priceId,
               quantity: 1,
             })}
+            locale={locale}
           />
         </div>
       </div>
 
       <div className="mt-10 rounded-md bg-white px-4 shadow">
         <h2 className="py-5 text-slate-600 font-semibold text-xl border-b border-gray-900/10">
-          FAQ (常见问题)
+          FAQ ({lang[locale].faq})
         </h2>
         <dl className="divide-y divide-gray-900/10">
-          {faqs.map((faq) => (
+          {data[locale].faqs.map((faq) => (
             <Disclosure
               as="div"
               key={faq.question}

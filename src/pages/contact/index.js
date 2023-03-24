@@ -3,6 +3,8 @@ import classNames from "classnames";
 import { useRouter } from "next/router";
 import Head from "next/head";
 import countries from "../../data/country.json";
+import lang from "../../data/lang.json";
+import metaData from "../../data/meta.json";
 
 export default function ContactPage() {
   const [firstName, setFirstName] = useState("");
@@ -11,7 +13,7 @@ export default function ContactPage() {
   const [country, setCountry] = useState("");
   const [message, setMessage] = useState("");
   const [submitted, setSubmitted] = useState(false);
-  const [failed, setFailed] = useState(false)
+  const [failed, setFailed] = useState(false);
 
   const router = useRouter();
 
@@ -78,7 +80,7 @@ export default function ContactPage() {
   return (
     <div className="container lg:max-w-screen-lg mx-auto px-5 lg:px-0">
       <Head>
-        <title>联系我</title>
+        <title>{lang[router.locale].contactMe}</title>
         <meta charSet="UTF-8" />
         <meta
           name="viewport"
@@ -91,10 +93,10 @@ export default function ContactPage() {
         />
         <meta
           name="keywords"
-          content="Hannah Lin, English lessons, online learning, grammar, vocabulary, pronunciation, 美式英语/英文听力, 美式英语口语, 美式英语发音技巧, 医学英语常用短语, 医学英语, 看病英语, 看医生英语"
+          content={metaData[router.locale].keywords}
         />
         <meta name="author" content="Hannah Lin" />
-        <meta property="og:title" content="联系我" />
+        <meta property="og:title" content={lang[router.locale].contactMe} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://hannahlinenglish.com" />
         <meta
@@ -107,7 +109,9 @@ export default function ContactPage() {
         />
       </Head>
 
-      <h1 className="my-10 text-2xl font-bold text-slate-600">联系我</h1>
+      <h1 className="my-10 text-2xl font-bold text-slate-600">
+        {lang[router.locale].contactMe}
+      </h1>
 
       <div className="isolate bg-white py-24 px-6 sm:py-32 lg:px-8 rounded-lg">
         <div className="mx-auto max-w-2xl text-center">
@@ -262,7 +266,11 @@ export default function ContactPage() {
               Send Message
             </button>
           </div>
-          {failed && <p className="mt-2 text-red-400 text-center">Try again, something went wrong.</p>}
+          {failed && (
+            <p className="mt-2 text-red-400 text-center">
+              Try again, something went wrong.
+            </p>
+          )}
         </form>
       </div>
     </div>

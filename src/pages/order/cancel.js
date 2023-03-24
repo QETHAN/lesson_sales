@@ -1,11 +1,26 @@
-import Stripe from "stripe";
 import Head from "next/head";
+import { useRouter } from "next/router";
+import metaData from "../../data/meta.json";
+import lang from "../../data/lang.json";
 
-export default function OrderCancel({ session }) {
+export default function OrderCancel() {
+  const { locale } = useRouter();
+
+  const data = {
+    "zh-cn": {
+      "tip": "您取消了这次购买",
+      "back": "返回首页",
+    },
+    "zh-tw": {
+      "tip": "您取消了這次購買",
+      "back": "返回首頁",
+    }
+  }
+
   return (
     <div className="container lg:max-w-screen-lg mx-auto px-5 lg:px-0">
       <Head>
-        <title>购买取消</title>
+        <title>{lang[locale].orderCancel}</title>
         <meta charSet="UTF-8" />
         <meta
           name="viewport"
@@ -18,10 +33,10 @@ export default function OrderCancel({ session }) {
         />
         <meta
           name="keywords"
-          content="Hannah Lin, English lessons, online learning, grammar, vocabulary, pronunciation, 美式英语/英文听力, 美式英语口语, 美式英语发音技巧, 医学英语常用短语, 医学英语, 看病英语, 看医生英语"
+          content={metaData[locale].keywords}
         />
         <meta name="author" content="Hannah Lin" />
-        <meta property="og:title" content="购买取消" />
+        <meta property="og:title" content={lang[locale].orderCancel} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://hannahlinenglish.com" />
         <meta
@@ -34,7 +49,7 @@ export default function OrderCancel({ session }) {
         />
       </Head>
 
-      <h1 className="my-10 text-2xl font-bold text-slate-600">购买取消</h1>
+      <h1 className="my-10 text-2xl font-bold text-slate-600">{lang[locale].orderCancel}</h1>
 
       <div className="relative flex flex-col justify-center items-center px-5 py-20 bg-white rounded-lg">
         <div className="flex justify-center items-center w-14 h-14 rounded-full bg-gray-300">
@@ -56,40 +71,18 @@ export default function OrderCancel({ session }) {
 
         <div className="mt-5">
           <h2 className="text-2xl text-center font-bold text-slate-600">
-            您取消了这次购买
+            {data[locale].tip}
           </h2>
           <div className="my-10 text-center">
             <a
               href="/"
               className="w-full px-10 py-2 rounded-md bg-blue-500 hover:bg-blue-600 text-white font-semibold text-base transition ease-in-out duration-150"
             >
-              返回首页
+              {data[locale].back}
             </a>
           </div>
         </div>
       </div>
     </div>
   );
-}
-
-export async function getServerSideProps({ query }) {
-  if (!query.session_id) {
-    return {
-      props: {
-        session: null,
-      },
-    };
-  }
-
-  const stripe = Stripe(process.env.STRIPE_SECRET_KEY);
-  const sessionId = query.session_id;
-  const session = await stripe.checkout.sessions.listLineItems(sessionId, {
-    limit: 5,
-  });
-
-  return {
-    props: {
-      session,
-    },
-  };
 }

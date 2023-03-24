@@ -1,58 +1,50 @@
 import Image from "next/image";
 import Head from "next/head";
-import Script from 'next/script'
+import Script from "next/script";
+import { useRouter } from "next/router";
 import BuyButton from "../../components/BuyButton";
 import { handleCheckout } from "../../utils/checkout";
+import data from "../../data/lesson/everyday-english-grammar.json";
+import lang from "../../data/lang.json";
+import metaData from "../../data/meta.json";
 
-const items = [
-  "第1期 - 英文母語者在生活中如何使用【Must have +PP 】",
-  "第2期 - 英文母語者在生活中如何使用【WISH + 過去分詞】",
-  "第3期 - 英文母語者在生活中如何使用【Should have + PP】",
-  "第4期 - 英文母語者特別喜歡用的【You wanna.../You don't wanna... 】",
-  "第5期 - 英文母語者在生活中如何使用【Could have + PP】",
-  "第6期 - 拟人式 语法【 Sth won't do sth】&【Something won't let me do sth】",
-  "第7期 -  英文母語者在生活中超級喜歡用的幾種過去式【生活中的過去式】",
-  "第8期 - 中國学生可能用得不太準確的【It's the first time that…】",
-  "第9期 - 英文母語者在生活中如何使用【WOULD】",
-  "第10期 - 英文母語者在生活中超級喜歡用的幾種現在進行式【現在進行式】",
-  "第11期 - 英文母語者在生活中如何使用【Would have +PP】",
-  "第12期 - 英文母語者超級喜歡用的【Matter, Count】各種常用句式",
-];
+const meta = {
+  "zh-cn": {
+    description:
+      "谈到语法，大家可能就会想到枯燥的语法知识。与传统语法课程不同，这套付费课程通过大量的生活口语例句，帮助学生了解英语母语者在什么场景下使用这些语法点。",
+  },
+  "zh-tw": {
+    description:
+      "談到語法，大家可能就會想到枯燥的語法知識。與傳統語法課程不同，這套付費課程通過大量的生活口語例句，幫助學生了解英語母語者在什麽場景下使用這些語法點。",
+  },
+};
 
 export default function DetailPage() {
+  const { locale } = useRouter();
   return (
     <div className="container lg:max-w-screen-lg mx-auto sm:px-5 lg:px-0">
       <Head>
-        <title>揭秘日常英语语法：真实场景下的常用语法</title>
+        <title>{data[locale].title}</title>
         <meta charSet="UTF-8" />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1.0, user-scalable=0"
         />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
-        <meta
-          name="description"
-          content="谈到语法，大家可能就会想到枯燥的语法知识。与传统语法课程不同，这套付费课程通过大量的生活口语例句，帮助学生了解英语母语者在什么场景下使用这些语法点。"
-        />
+        <meta name="description" content={meta[locale].description} />
         <meta
           name="keywords"
-          content="Hannah Lin, English lessons, online learning, grammar, vocabulary, pronunciation, 美式英语/英文听力, 美式英语口语, 美式英语发音技巧, 医学英语常用短语, 医学英语, 看病英语, 看医生英语"
+          content={metaData[locale].keywords}
         />
         <meta name="author" content="Hannah Lin" />
-        <meta
-          property="og:title"
-          content="揭秘日常英语语法：真实场景下的常用语法"
-        />
+        <meta property="og:title" content={data[locale].title} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://hannahlinenglish.com" />
         <meta
           property="og:image"
           content="https://hannahlinenglish.com/static/img/cover/everyday-english.jpg"
         />
-        <meta
-          property="og:description"
-          content="谈到语法，大家可能就会想到枯燥的语法知识。与传统语法课程不同，这套付费课程通过大量的生活口语例句，帮助学生了解英语母语者在什么场景下使用这些语法点。"
-        />
+        <meta property="og:description" content={meta[locale].description} />
       </Head>
       <Script id="no-safari-cache" strategy="afterInteractive">
         {`(function () {
@@ -64,14 +56,14 @@ export default function DetailPage() {
       })();`}
       </Script>
       <h1 className="my-10 px-5 sm:px-0 text-2xl font-semibold text-slate-600">
-        付费课程
+        {lang[locale].paidCourse}
       </h1>
       <div className="flex flex-col lg:flex-row space-y-5 lg:space-y-0 bg-white sm:rounded-2xl shadow overflow-hidden">
         <figure className="lg:max-w-[65%] overflow-hidden">
           <Image
             className="w-full h-full object-fill"
             src="/static/img/cover/everyday-english.jpg"
-            alt="揭秘日常英语语法：真实场景下的常用语法"
+            alt={data[locale].title}
             width="666"
             height="384"
             priority
@@ -84,20 +76,20 @@ export default function DetailPage() {
               Common Usage
             </h1>
             <h2 className="mt-2 text-slate-500 font-medium text-lg">
-              揭秘日常英语语法：真实场景下的常用语法
+              {data[locale].title}
             </h2>
           </div>
           <div className="mt-8 lg:mt-5">
             <dl className="my-3 flex space-x-2 text-slate-500 text-base">
-              <dt>课程更新频次：</dt>
-              <dd>两期视频/月</dd>
+              <dt>{data[locale].frequencyTitle}：</dt>
+              <dd>{data[locale].frequency}</dd>
             </dl>
             <dl className="my-3 flex space-x-2 text-slate-500 text-base">
-              <dt>课程期限：</dt>
-              <dd>6 个月</dd>
+              <dt>{data[locale].durationTitle}：</dt>
+              <dd>{data[locale].duration}</dd>
             </dl>
             <dl className="my-3 flex items-center space-x-2 text-slate-600 font-medium text-base">
-              <dt>价格：</dt>
+              <dt>{lang[locale].price}：</dt>
               <dd className="text-lg">USD $90</dd>
             </dl>
             <div className="my-8 lg:my-4 sm:w-2/3 lg:w-full mx-auto sm:text-center lg:text-left">
@@ -108,6 +100,7 @@ export default function DetailPage() {
                       .NEXT_PUBLIC_STRIPE_GRAMMAR_DAILY_LESSON_PRICE_ID,
                   quantity: 1,
                 })}
+                locale={locale}
               />
             </div>
           </div>
@@ -116,30 +109,26 @@ export default function DetailPage() {
 
       <div className="mt-10 rounded-md bg-white shadow">
         <h2 className="p-4 text-slate-600 font-semibold text-xl border-b border-gray-200">
-          课程描述
+          {lang[locale].lessonDesc}
         </h2>
         <div className="p-4 space-y-4">
-          <p className="text-slate-500 text-base">
-            谈到语法，大家可能就会想到枯燥的语法知识。与传统语法课程不同，这套付费课程通过大量的生活口语例句，帮助学生了解英语母语者在什么场景下使用这些语法点。许多中国学生可能听过这些语法概念，知道怎么答题，但不知道如何在日常生活中自由使用。
-          </p>
-          <p className="text-slate-500 text-base">
-            视频中的大部分例句是中国学生难以表达或极有可能容易说错的句子。每一期视频都会通过视频和音频形式呈现大量的例句，帮助学生“通过耳朵”熟悉每一句，在实际生活中能够真正使用到这些语法点。毕竟，学语法最终目的是有助于我们使用英语句子。
-          </p>
-          <p className="text-slate-500 text-base">
-            相信学完这套课程后，这些语法点将不再停留在知识层面，大家可以真正运用到生活当中，将口语提高到一个全新的境界。
-          </p>
+          {data[locale].description.map((item, index) => (
+            <p key={index} className="text-gray-500 text-base">
+              {item}
+            </p>
+          ))}
         </div>
       </div>
 
       <div className="mt-10 rounded-md bg-white shadow">
         <h2 className="px-4 py-5 text-slate-600 font-semibold text-xl border-b border-gray-200">
-          课程目录
+          {lang[locale].lessonCatalog}
         </h2>
         <ul
           role="list"
           className="px-4 divide-y divide-gray-200 text-slate-500"
         >
-          {items.map((item, index) => (
+          {data[locale].catalog.map((item, index) => (
             <li key={index} className="py-4">
               {item}
             </li>
