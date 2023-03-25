@@ -1,6 +1,7 @@
 import classNames from "classnames";
 import React, { Fragment } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { useRouter } from "next/router";
 import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
@@ -41,10 +42,12 @@ export default function Navbar({ children }) {
         <nav className="container lg:max-w-screen-lg mx-auto">
           <div className="flex justify-between items-center">
             <a href="/">
-              <img
+              <Image
                 src="/static/img/logo.png"
                 alt="HannahLinEnglish"
-                className="h-10"
+                width="188"
+                height="40"
+                priority
               />
             </a>
             <div className="flex space-x-6 items-center">
