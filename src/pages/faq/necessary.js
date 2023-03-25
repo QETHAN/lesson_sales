@@ -6,32 +6,34 @@ import lang from "../../data/lang.json";
 
 const data = {
   "zh-cn": {
-    "faqs": [
+    faqs: [
       {
-        "question": "会怎么收到视频？",
-        "answer": "支付成功后，24-48小时内，您将会从您购买时提供的邮箱里收到课程视频链接。如果您没有收到邮件，请检查您的邮件垃圾箱。",
+        question: "会怎么收到视频？",
+        answer:
+          "支付成功后，24-48小时内，您将会从您购买时提供的邮箱里收到课程视频链接。如果您没有收到邮件，请检查您的邮件垃圾箱。",
         open: true,
       },
       {
-        "question": "能否下载付费视频？",
-        "answer": "目前不支持下载付费视频。",
+        question: "能否下载付费视频？",
+        answer: "目前不支持下载付费视频。",
       },
     ],
   },
   "zh-tw": {
-    "faqs": [
+    faqs: [
       {
-        "question": "會怎麼收到視頻？",
-        "answer": "支付成功後，24-48小時內，您將會從您購買時提供的郵箱裏收到課程視頻鏈接。如果您沒有收到郵件，請檢查您的郵件垃圾箱。",
+        question: "會怎麼收到視頻？",
+        answer:
+          "支付成功後，24-48小時內，您將會從您購買時提供的郵箱裏收到課程視頻鏈接。如果您沒有收到郵件，請檢查您的郵件垃圾箱。",
         open: true,
       },
       {
-        "question": "能否下載付費視頻？",
-        "answer": "目前不支持下載付費視頻。",
+        question: "能否下載付費視頻？",
+        answer: "目前不支持下載付費視頻。",
       },
-    ]
-  }
-}
+    ],
+  },
+};
 
 const meta = {
   "zh-cn": {
@@ -51,16 +53,10 @@ export default function AboutPage() {
       <Head>
         <title>{lang[locale].buyNotice}</title>
         <meta charSet="UTF-8" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1.0, user-scalable=0"
-        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
         <meta name="description" content={meta[locale].description} />
-        <meta
-          name="keywords"
-          content={meta[locale].keywords}
-        />
+        <meta name="keywords" content={meta[locale].keywords} />
         <meta name="author" content="Hannah Lin" />
         <meta property="og:title" content={lang[locale].buyNotice} />
         <meta property="og:type" content="website" />
@@ -70,9 +66,23 @@ export default function AboutPage() {
           content="https://hannahlinenglish.com/static/img/logo.png"
         />
         <meta property="og:description" content={meta[locale].description} />
-        <link rel="apple-touch-icon" sizes="180x180" href="/static/img/icons/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/static/img/icons/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/static/img/icons/favicon-16x16.png" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/static/img/icons/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/static/img/icons/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/static/img/icons/favicon-16x16.png"
+        />
         <link rel="manifest" href="/static/img/icons/site.webmanifest" />
         <meta name="theme-color" content="#ffffff" />
       </Head>

@@ -11,19 +11,13 @@ export default function ContactSuccessPage() {
       <Head>
         <title>{lang[locale].contactMe}</title>
         <meta charSet="UTF-8" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1.0, user-scalable=0"
-        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
         <meta
           name="description"
           content="Improve your American English pronunciation, listening skills, and spoken English with Hannah Lin. Learn how to speak like a native and communicate effectively in any situation."
         />
-        <meta
-          name="keywords"
-          content={metaData[locale].keywords}
-        />
+        <meta name="keywords" content={metaData[locale].keywords} />
         <meta name="author" content="Hannah Lin" />
         <meta property="og:title" content={lang[locale].contactMe} />
         <meta property="og:type" content="website" />
@@ -36,14 +30,30 @@ export default function ContactSuccessPage() {
           property="og:description"
           content="Improve your American English pronunciation, listening skills, and spoken English with Hannah Lin. Learn how to speak like a native and communicate effectively in any situation."
         />
-        <link rel="apple-touch-icon" sizes="180x180" href="/static/img/icons/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/static/img/icons/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/static/img/icons/favicon-16x16.png" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/static/img/icons/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/static/img/icons/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/static/img/icons/favicon-16x16.png"
+        />
         <link rel="manifest" href="/static/img/icons/site.webmanifest" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
 
-      <h1 className="my-10 text-2xl font-bold text-slate-600">{lang[locale].contactMe}</h1>
+      <h1 className="my-10 text-2xl font-bold text-slate-600">
+        {lang[locale].contactMe}
+      </h1>
 
       <div className="flex flex-col justify-center items-center px-5 py-20 bg-white rounded-lg">
         <div className="flex justify-center items-center w-14 h-14 rounded-full bg-green-500">
@@ -64,8 +74,12 @@ export default function ContactSuccessPage() {
         </div>
 
         <div className="mt-2">
-          <h2 className="text-xl text-center font-bold text-slate-600">Thank you</h2>
-          <p className="mt-5 text-base text-center text-gray-500">Your message has been sent.</p>
+          <h2 className="text-xl text-center font-bold text-slate-600">
+            Thank you
+          </h2>
+          <p className="mt-5 text-base text-center text-gray-500">
+            Your message has been sent.
+          </p>
         </div>
       </div>
     </div>

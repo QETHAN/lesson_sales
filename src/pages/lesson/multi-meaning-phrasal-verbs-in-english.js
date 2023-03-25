@@ -10,12 +10,14 @@ import data from "../../data/lesson/multi-meaning-phrasal-verbs-in-english.json"
 
 const meta = {
   "zh-cn": {
-    "description": "你是否正在为了用英语沟通而苦恼？你是否想知道母语人士是如何自然地表达自己的？你是否想讲出地道自然的英文口语，而不是生硬的中式英语？",
+    description:
+      "你是否正在为了用英语沟通而苦恼？你是否想知道母语人士是如何自然地表达自己的？你是否想讲出地道自然的英文口语，而不是生硬的中式英语？",
   },
   "zh-tw": {
-    "description": "你是否正在為了用英語溝通而苦惱？你是否想知道母語人士是如何自然地表達自己的？你是否想講出地道自然的英文口語，而不是生硬的中式英語？",
-  }
-}
+    description:
+      "你是否正在為了用英語溝通而苦惱？你是否想知道母語人士是如何自然地表達自己的？你是否想講出地道自然的英文口語，而不是生硬的中式英語？",
+  },
+};
 
 export default function DetailPage() {
   const { locale } = useRouter();
@@ -24,37 +26,36 @@ export default function DetailPage() {
       <Head>
         <title>{data[locale].title}</title>
         <meta charSet="UTF-8" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1.0, user-scalable=0"
-        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
-        <meta
-          name="description"
-          content={meta[locale].description}
-        />
-        <meta
-          name="keywords"
-          content={metaData[locale].keywords}
-        />
+        <meta name="description" content={meta[locale].description} />
+        <meta name="keywords" content={metaData[locale].keywords} />
         <meta name="author" content="Hannah Lin" />
-        <meta
-          property="og:title"
-          content={data[locale].title}
-        />
+        <meta property="og:title" content={data[locale].title} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://hannahlinenglish.com" />
         <meta
           property="og:image"
           content="https://hannahlinenglish.com/static/img/cover/everyday-english.jpg"
         />
-        <meta
-          property="og:description"
-          content={meta[locale].description}
+        <meta property="og:description" content={meta[locale].description} />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/static/img/icons/apple-touch-icon.png"
         />
-        <link rel="apple-touch-icon" sizes="180x180" href="/static/img/icons/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/static/img/icons/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/static/img/icons/favicon-16x16.png" />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/static/img/icons/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/static/img/icons/favicon-16x16.png"
+        />
         <link rel="manifest" href="/static/img/icons/site.webmanifest" />
         <meta name="theme-color" content="#ffffff" />
       </Head>

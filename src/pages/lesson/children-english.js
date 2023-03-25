@@ -32,14 +32,18 @@ const prices = [
 
 const meta = {
   "zh-cn": {
-    "title": "点燃孩子英语潜能，让TA终生受益 - 妈妈是打造最佳英语学习环境的超级教练 | 少儿英语 | 早教英语",
-    "description": "本课程是为那些有3至6岁孩子的家长而设计的，这些家长希望在家里参与孩子的英语学习，同时创造一个环境让孩子每天都能听到英语。",
+    title:
+      "点燃孩子英语潜能，让TA终生受益 - 妈妈是打造最佳英语学习环境的超级教练 | 少儿英语 | 早教英语",
+    description:
+      "本课程是为那些有3至6岁孩子的家长而设计的，这些家长希望在家里参与孩子的英语学习，同时创造一个环境让孩子每天都能听到英语。",
   },
   "zh-tw": {
-    "title": "點燃孩子英語潛能，讓TA終生受益 - 媽媽是打造最佳英語學習環境的超級教練 | 少兒英語 | 早教英語",
-    "description": "本課程是為那些有3至6歲孩子的家長而設計的，這些家長希望在家裡參與孩子的英語學習，同時創造一個環境讓孩子每天都能聽到英語。",
-  }
-}
+    title:
+      "點燃孩子英語潛能，讓TA終生受益 - 媽媽是打造最佳英語學習環境的超級教練 | 少兒英語 | 早教英語",
+    description:
+      "本課程是為那些有3至6歲孩子的家長而設計的，這些家長希望在家裡參與孩子的英語學習，同時創造一個環境讓孩子每天都能聽到英語。",
+  },
+};
 
 export default function DetailPage() {
   const [selectedIndex, setSelectedIndex] = React.useState(0);
@@ -48,41 +52,38 @@ export default function DetailPage() {
   return (
     <div className="container lg:max-w-screen-lg mx-auto sm:px-5 lg:px-0">
       <Head>
-        <title>
-          {meta[locale].title}
-        </title>
+        <title>{meta[locale].title}</title>
         <meta charSet="UTF-8" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1.0, user-scalable=0"
-        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
-        <meta
-          name="description"
-          content={meta[locale].description}
-        />
-        <meta
-          name="keywords"
-          content={metaData[locale].keywords}
-        />
+        <meta name="description" content={meta[locale].description} />
+        <meta name="keywords" content={metaData[locale].keywords} />
         <meta name="author" content="Hannah Lin" />
-        <meta
-          property="og:title"
-          content={meta[locale].title}
-        />
+        <meta property="og:title" content={meta[locale].title} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://hannahlinenglish.com" />
         <meta
           property="og:image"
           content="https://hannahlinenglish.com/static/img/cover/children-english.jpg"
         />
-        <meta
-          property="og:description"
-          content={meta[locale].description}
+        <meta property="og:description" content={meta[locale].description} />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/static/img/icons/apple-touch-icon.png"
         />
-        <link rel="apple-touch-icon" sizes="180x180" href="/static/img/icons/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/static/img/icons/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/static/img/icons/favicon-16x16.png" />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/static/img/icons/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/static/img/icons/favicon-16x16.png"
+        />
         <link rel="manifest" href="/static/img/icons/site.webmanifest" />
         <meta name="theme-color" content="#ffffff" />
       </Head>

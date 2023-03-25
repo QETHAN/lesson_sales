@@ -32,12 +32,12 @@ const prices = [
 
 const meta = {
   "zh-cn": {
-    "description": "本课程适合想要提高听力并能够听懂生活快速英语的学生。",
+    description: "本课程适合想要提高听力并能够听懂生活快速英语的学生。",
   },
   "zh-tw": {
-    "description": "本課程適合想要提高聽力並能夠聽懂生活快速英語的學生。",
-  }
-}
+    description: "本課程適合想要提高聽力並能夠聽懂生活快速英語的學生。",
+  },
+};
 
 export default function DetailPage() {
   const { locale } = useRouter();
@@ -47,37 +47,36 @@ export default function DetailPage() {
       <Head>
         <title>{data[locale].title}</title>
         <meta charSet="UTF-8" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1.0, user-scalable=0"
-        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
-        <meta
-          name="description"
-          content={meta[locale].description}
-        />
-        <meta
-          name="keywords"
-          content={metaData[locale].keywords}
-        />
+        <meta name="description" content={meta[locale].description} />
+        <meta name="keywords" content={metaData[locale].keywords} />
         <meta name="author" content="Hannah Lin" />
-        <meta
-          property="og:title"
-          content={data[locale].title}
-        />
+        <meta property="og:title" content={data[locale].title} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://hannahlinenglish.com" />
         <meta
           property="og:image"
           content="https://hannahlinenglish.com/static/img/cover/children-english.jpg"
         />
-        <meta
-          property="og:description"
-          content={meta[locale].description}
+        <meta property="og:description" content={meta[locale].description} />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/static/img/icons/apple-touch-icon.png"
         />
-        <link rel="apple-touch-icon" sizes="180x180" href="/static/img/icons/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/static/img/icons/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/static/img/icons/favicon-16x16.png" />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/static/img/icons/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/static/img/icons/favicon-16x16.png"
+        />
         <link rel="manifest" href="/static/img/icons/site.webmanifest" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
@@ -119,7 +118,9 @@ export default function DetailPage() {
       </div>
 
       <div className="mt-10 rounded-md bg-white p-4 shadow">
-        <h2 className="text-slate-600 font-semibold text-xl">{lang[locale].buyLessons}</h2>
+        <h2 className="text-slate-600 font-semibold text-xl">
+          {lang[locale].buyLessons}
+        </h2>
         <ul className="mt-5 grid grid-cols-1 gap-y-5 sm:grid-cols-3 sm:gap-y-0 sm:gap-x-5">
           {prices.map((item, idx) => (
             <li

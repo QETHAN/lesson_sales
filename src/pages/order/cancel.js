@@ -8,33 +8,27 @@ export default function OrderCancel() {
 
   const data = {
     "zh-cn": {
-      "tip": "您取消了这次购买",
-      "back": "返回首页",
+      tip: "您取消了这次购买",
+      back: "返回首页",
     },
     "zh-tw": {
-      "tip": "您取消了這次購買",
-      "back": "返回首頁",
-    }
-  }
+      tip: "您取消了這次購買",
+      back: "返回首頁",
+    },
+  };
 
   return (
     <div className="container lg:max-w-screen-lg mx-auto px-5 lg:px-0">
       <Head>
         <title>{lang[locale].orderCancel}</title>
         <meta charSet="UTF-8" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1.0, user-scalable=0"
-        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
         <meta
           name="description"
           content="Improve your American English pronunciation, listening skills, and spoken English with Hannah Lin. Learn how to speak like a native and communicate effectively in any situation."
         />
-        <meta
-          name="keywords"
-          content={metaData[locale].keywords}
-        />
+        <meta name="keywords" content={metaData[locale].keywords} />
         <meta name="author" content="Hannah Lin" />
         <meta property="og:title" content={lang[locale].orderCancel} />
         <meta property="og:type" content="website" />
@@ -47,14 +41,30 @@ export default function OrderCancel() {
           property="og:description"
           content="Improve your American English pronunciation, listening skills, and spoken English with Hannah Lin. Learn how to speak like a native and communicate effectively in any situation."
         />
-        <link rel="apple-touch-icon" sizes="180x180" href="/static/img/icons/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/static/img/icons/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/static/img/icons/favicon-16x16.png" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/static/img/icons/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/static/img/icons/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/static/img/icons/favicon-16x16.png"
+        />
         <link rel="manifest" href="/static/img/icons/site.webmanifest" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
 
-      <h1 className="my-10 text-2xl font-bold text-slate-600">{lang[locale].orderCancel}</h1>
+      <h1 className="my-10 text-2xl font-bold text-slate-600">
+        {lang[locale].orderCancel}
+      </h1>
 
       <div className="relative flex flex-col justify-center items-center px-5 py-20 bg-white rounded-lg">
         <div className="flex justify-center items-center w-14 h-14 rounded-full bg-gray-300">
