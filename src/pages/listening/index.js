@@ -65,7 +65,7 @@ export default function ListeningPage() {
                           {item.title}
                         </span>
 
-                        <div className="ml-2 flex items-center space-x-2">
+                        <div className="flex-shrink-0 ml-2 flex items-center space-x-2">
                           <a
                             href={item.url}
                             target="_blank"
@@ -131,7 +131,7 @@ export default function ListeningPage() {
                           <span className="text-base font-semibold leading-7">
                             {item.title}
                           </span>
-                          <div className="ml-2 flex items-center space-x-2">
+                          <div className="flex-shrink-0 ml-2 flex items-center space-x-2">
                             <a
                               href={item.url}
                               target="_blank"

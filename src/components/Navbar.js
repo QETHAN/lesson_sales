@@ -43,7 +43,7 @@ export default function Navbar({ children }) {
             <a href="/">
               <img
                 src="/static/img/logo.png"
-                alt="Logo of HannahLin's English"
+                alt="HannahLinEnglish"
                 className="h-10"
               />
             </a>
