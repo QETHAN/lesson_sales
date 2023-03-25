@@ -91,7 +91,7 @@ export default function DetailPage() {
       })();`}
       </Script>
       <h1 className="my-10 px-5 sm:px-0 text-2xl font-semibold text-slate-600">
-        {data[locale].paidCourse}
+        {lang[locale].paidCourse}
       </h1>
       <div className="flex flex-col lg:flex-row bg-white sm:rounded-2xl shadow overflow-hidden">
         <figure className="w-full lg:w-[640px] lg:h-[360px] overflow-hidden bg-gray-200">
