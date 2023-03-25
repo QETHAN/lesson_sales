@@ -145,6 +145,7 @@ export default function Navbar({ children }) {
                 href={link.href}
                 className="block px-4 py-2 text-base text-slate-600 hover:text-slate-500 hover:bg-gray-100"
                 locale={locale}
+                onClick={() => setIsMenuOpen(false)}
               >
                 {link.name}
               </Link>
