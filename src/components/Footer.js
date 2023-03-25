@@ -9,9 +9,9 @@ export default function Footer() {
       <div className="container lg:max-w-screen-lg mx-auto px-5 lg:px-0">
         <div className="flex flex-col space-y-5 sm:space-y-0 sm:flex-row sm:space-x-20">
           <section>
-            <h4 className="font-medium text-base text-gray-600">
+            <h2 className="font-medium text-base text-gray-600">
               HannahLin's English
-            </h4>
+            </h2>
 
             <div className="mt-3 text-gray-400 hover:text-gray-500 text-sm">
               <label>Email: </label>
@@ -20,9 +20,9 @@ export default function Footer() {
           </section>
 
           <section>
-            <h4 className="font-medium text-base text-gray-600">
+            <h2 className="font-medium text-base text-gray-600">
               {lang[locale].social}
-            </h4>
+            </h2>
 
             <div className="text-gray-400 hover:text-gray-500 text-sm mt-3 flex flex-col space-y-3">
               <a href="https://www.youtube.com/@HannahLinEnglish">YouTube</a>
@@ -30,9 +30,9 @@ export default function Footer() {
           </section>
 
           <section>
-            <h4 className="font-medium text-base text-gray-600">
+            <h2 className="font-medium text-base text-gray-600">
               {lang[locale].about}
-            </h4>
+            </h2>
 
             <div className="mt-3 text-gray-400 hover:text-gray-500 text-sm">
               <Link href="/about" locale={locale}>
@@ -42,9 +42,9 @@ export default function Footer() {
           </section>
 
           <section>
-            <h4 className="font-medium text-base text-gray-600">
+            <h2 className="font-medium text-base text-gray-600">
               {lang[locale].contact}
-            </h4>
+            </h2>
 
             <div className="mt-3 text-gray-400 hover:text-gray-500 text-sm">
               <Link href="/contact" locale={locale}>
@@ -54,7 +54,7 @@ export default function Footer() {
           </section>
 
           <section>
-            <h4 className="font-medium text-base text-gray-600">FAQ</h4>
+            <h2 className="font-medium text-base text-gray-600">FAQ</h2>
 
             <div className="mt-3 text-gray-400 hover:text-gray-500 text-sm">
               <Link href="/faq/necessary" locale={locale}>
