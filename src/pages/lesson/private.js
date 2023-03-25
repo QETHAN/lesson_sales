@@ -89,13 +89,13 @@ export default function DetailPage() {
         {lang[locale].privateCourse}
       </h1>
       <div className="flex flex-col lg:flex-row bg-white sm:rounded-2xl shadow overflow-hidden">
-        <figure className="lg:max-w-[65%] overflow-hidden">
+        <figure className="w-full lg:w-[640px] lg:h-[360px] overflow-hidden bg-gray-200">
           <Image
             className="w-full h-full object-fill"
             src="/static/img/cover/private.jpg"
             alt={data[locale].title}
-            width="666"
-            height="384"
+            width="640"
+            height="360"
             priority
           />
         </figure>
