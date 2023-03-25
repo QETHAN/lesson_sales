@@ -36,6 +36,11 @@ export default function ContactSuccessPage() {
           property="og:description"
           content="Improve your American English pronunciation, listening skills, and spoken English with Hannah Lin. Learn how to speak like a native and communicate effectively in any situation."
         />
+        <link rel="apple-touch-icon" sizes="180x180" href="/static/img/icons/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/static/img/icons/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/static/img/icons/favicon-16x16.png" />
+        <link rel="manifest" href="/static/img/icons/site.webmanifest" />
+        <meta name="theme-color" content="#ffffff" />
       </Head>
 
       <h1 className="my-10 text-2xl font-bold text-slate-600">{lang[locale].contactMe}</h1>

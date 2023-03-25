@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 import data from "../data/paid_lessons.json";
 
 export default function PaidLessons() {
-  const { locale, locales, defaultLocale, asPath } = useRouter();
+  const { locale } = useRouter();
 
   return (
     <div className="container lg:max-w-screen-lg mx-auto px-5 lg:px-0">

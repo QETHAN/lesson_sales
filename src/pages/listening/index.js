@@ -41,6 +41,11 @@ export default function ListeningPage() {
           content="https://hannahlinenglish.com/static/img/logo.png"
         />
         <meta property="og:description" content={meta[locale].description} />
+        <link rel="apple-touch-icon" sizes="180x180" href="/static/img/icons/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/static/img/icons/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/static/img/icons/favicon-16x16.png" />
+        <link rel="manifest" href="/static/img/icons/site.webmanifest" />
+        <meta name="theme-color" content="#ffffff" />
       </Head>
 
       <article>
