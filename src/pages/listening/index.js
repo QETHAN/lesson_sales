@@ -108,7 +108,7 @@ export default function ListeningPage() {
                         </div>
                       </Disclosure.Button>
                     </dt>
-                    <Disclosure.Panel as="dd" className="mt-2 pr-12">
+                    <Disclosure.Panel as="dd" className="mt-2">
                       {item.answer.map((ans, idx) => (
                         <div
                           key={idx}
@@ -174,7 +174,7 @@ export default function ListeningPage() {
                           </div>
                         </Disclosure.Button>
                       </dt>
-                      <Disclosure.Panel as="dd" className="mt-2 pr-12">
+                      <Disclosure.Panel as="dd" className="mt-2">
                         {item.answer.map((ans, idx) => (
                           <div
                             key={idx}
