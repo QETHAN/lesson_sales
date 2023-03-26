@@ -35,7 +35,7 @@ export default function Navbar({ children }) {
   return (
     <>
       <header
-        className={classNames("bg-white px-5 py-4 sticky top-0 z-[1000]", {
+        className={classNames("bg-white px-5 py-4 sticky top-0 z-[1000] shadow", {
           "fixed top-0 inset-x-0": isMenuOpen,
         })}
       >
