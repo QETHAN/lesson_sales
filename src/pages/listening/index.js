@@ -66,10 +66,10 @@ export default function ListeningPage() {
 
         <section className="mt-5 rounded-md bg-white px-5 shadow">
           <dl className="divide-y divide-gray-900/10">
-            {listeningData[locale].long.reverse().map((item, index) => (
+            {listeningData[locale].long.map((item) => (
               <Disclosure
                 as="div"
-                key={index}
+                key={item.id}
                 className="py-6"
                 defaultOpen={item.open}
               >
@@ -109,7 +109,7 @@ export default function ListeningPage() {
                       </Disclosure.Button>
                     </dt>
                     <Disclosure.Panel as="dd" className="mt-2 pr-12">
-                      {item.answer.reverse().map((ans, idx) => (
+                      {item.answer.map((ans, idx) => (
                         <div
                           key={idx}
                           className="mt-2 text-base leading-7 text-slate-500"
@@ -132,11 +132,11 @@ export default function ListeningPage() {
 
         <section className="mt-5 rounded-md bg-white px-5 shadow">
           <dl className="divide-y divide-gray-900/10">
-            {listeningData[locale].short.reverse().map((item, index) => {
+            {listeningData[locale].short.map((item) => {
               return (
                 <Disclosure
                   as="div"
-                  key={index}
+                  key={item.id}
                   className="py-6"
                   defaultOpen={item.open}
                 >

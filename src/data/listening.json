@@ -4,6 +4,39 @@
     "longTitle": "长听力", 
     "long": [
       {
+        "id": 259,
+        "title": "第259期 | 如何听懂美国人聊天正常语速 | 突破听力难关：学习美式口语发音诀窍 | 理解美式发音，让你的英语听力更上一层楼 | 想听懂快速英语口语？学会这些技巧 | 快速英语口语听力攻略 | HannahLin",
+        "url": "https://www.youtube.com/watch?v=RlHVrHrZiUM",
+        "answer": [
+          "<p>答案在下期影片中</p>"
+        ]
+      },
+      {
+        "id": 258,
+        "title": "第258期 | 如何听懂美国人聊天正常语速 | 突破听力难关：学习美式口语发音诀窍 | 理解美式发音，让你的英语听力更上一层楼 | 想听懂快速英语口语？学会这些技巧 | 快速英语口语听力攻略 | HannahLin",
+        "url": "https://www.youtube.com/watch?v=hUE2iEE49PY",
+        "answer": [
+          "<p>答案在下期影片中</p>"
+        ]
+      },
+      {
+        "id": 257,
+        "title": "第257期| 美国人聊天正常语速 | 你能听懂多少 | 听力提高秘笈：别让眼睛来主导，耳朵才是王道！| 听力进阶之路：练好耳朵，别被眼睛忽悠了 | 练听力：慢就是快 | HannahLin",
+        "url": "https://www.youtube.com/watch?v=PzpoJb4Hc2E",
+        "answer": [
+          "<p>答案在下期影片中</p>"
+        ]
+      },
+      {
+        "id": 256,
+        "title": "第256期 美国人聊天正常语速 | 你能听懂多少 | 提高听力 有捷径吗？| 听力提高：没有捷径，只有稳步前行！| Listening Practice | Hannah Lin",
+        "url": "https://www.youtube.com/watch?v=yy60ezlrxrI",
+        "answer": [
+          "<p>答案在本期影片中</p>"
+        ]
+      },
+      {
+        "id": 255,
         "title": "第255期 Listening practice | For those who truly want to work on their listening skills",
         "url": "https://www.youtube.com/watch?v=9YXSqkjVmNg",
         "answer": [
@@ -12,46 +45,31 @@
           "<p> I’m just doing some breathing exercises. I teach them <span class=\"text-red-400\">to</span> (<span class=\"text-red-400\">/tə/</span>) all my clients. <span class=\"bg-gray-100 font-medium\">It’s a great way</span> to let go of some anxiety.</p>",
           "<p>I like rid<span class=\"text-red-400\">ing</span> <span class=\"text-red-400\">(weak sound)</span> the 10-speed because it’s fun, uh, gives you energy, and <span class=\"bg-gray-100 font-medium\">it’s a great way</span> to <span class=\"text-green-500\">stay in shape</span>.</p>"
         ]
-      },
-      {
-        "title": "第256期 美国人聊天正常语速 | 你能听懂多少 | 提高听力 有捷径吗？| 听力提高：没有捷径，只有稳步前行！| Listening Practice | Hannah Lin",
-        "url": "https://www.youtube.com/watch?v=yy60ezlrxrI",
-        "answer": [
-          "<p>答案在本期影片中</p>"
-        ]
-      },
-      {
-        "title": "第257期| 美国人聊天正常语速 | 你能听懂多少 | 听力提高秘笈：别让眼睛来主导，耳朵才是王道！| 听力进阶之路：练好耳朵，别被眼睛忽悠了 | 练听力：慢就是快 | HannahLin",
-        "url": "https://www.youtube.com/watch?v=PzpoJb4Hc2E",
-        "answer": [
-          "<p>答案在下期影片中</p>"
-        ]
-      },
-      {
-        "title": "第258期 | 如何听懂美国人聊天正常语速 | 突破听力难关：学习美式口语发音诀窍 | 理解美式发音，让你的英语听力更上一层楼 | 想听懂快速英语口语？学会这些技巧 | 快速英语口语听力攻略 | HannahLin",
-        "url": "https://www.youtube.com/watch?v=hUE2iEE49PY",
-        "answer": [
-          "<p>答案在下期影片中</p>"
-        ]
-      },
-      {
-        "title": "第259期 | 如何听懂美国人聊天正常语速 | 突破听力难关：学习美式口语发音诀窍 | 理解美式发音，让你的英语听力更上一层楼 | 想听懂快速英语口语？学会这些技巧 | 快速英语口语听力攻略 | HannahLin",
-        "url": "https://www.youtube.com/watch?v=RlHVrHrZiUM",
-        "answer": [
-          "<p>答案在下期影片中</p>"
-        ]
       }
     ],
     "short": [
       {
-        "title": "Episode 19",
-        "url": "https://www.youtube.com/shorts/shDt6FzGfUU",
+        "id": 23,
+        "title": "Episode 23",
+        "url": "https://www.youtube.com/shorts/7QTcSU4Pr9U",
+        "answer": ["<p>I must be making progress. <span class=\"text-green-500\">I don’t mean to</span> brag.</p>"]
+      },
+      {
+        "id": 22,
+        "title": "Episode 22",
+        "url": "https://www.youtube.com/shorts/oJkbdZUYSCk",
+        "answer": ["<p><span class=\"text-green-500\">I don't mean to</span> overstep. Who knows a son better than his father, right?</p>"]
+      },
+      {
+        "id": 21,
+        "title": "Episode 21",
+        "url": "https://www.youtube.com/shorts/cV8rwsqvjkw",
         "answer": [
-          "<p>What is <span class=\"text-green-500\">it</span> exactly that you want?</p>",
-          "<p>Family.</p>"
+          "<p>What exactly is <span class=\"text-green-500\">it</span> that she needs?</p>"
         ]
       },
       {
+        "id": 20,
         "title": "Episode 20",
         "url": "https://www.youtube.com/shorts/qvyXSUScLUo",
         "answer": [
@@ -60,21 +78,13 @@
         ]
       },
       {
-        "title": "Episode 21",
-        "url": "https://www.youtube.com/shorts/cV8rwsqvjkw",
+        "id": 19,
+        "title": "Episode 19",
+        "url": "https://www.youtube.com/shorts/shDt6FzGfUU",
         "answer": [
-          "<p>What exactly is <span class=\"text-green-500\">it</span> that she needs?</p>"
+          "<p>What is <span class=\"text-green-500\">it</span> exactly that you want?</p>",
+          "<p>Family.</p>"
         ]
-      },
-      {
-        "title": "Episode 22",
-        "url": "https://www.youtube.com/shorts/oJkbdZUYSCk",
-        "answer": ["<p><span class=\"text-green-500\">I don't mean to</span> overstep. Who knows a son better than his father, right?</p>"]
-      },
-      {
-        "title": "Episode 23",
-        "url": "https://www.youtube.com/shorts/7QTcSU4Pr9U",
-        "answer": ["<p>I must be making progress. <span class=\"text-green-500\">I don’t mean to</span> brag.</p>"]
       }
     ]
   },
@@ -83,6 +93,39 @@
     "longTitle": "長聽力",
     "long": [
       {
+        "id": 259,
+        "title": "第259期 | 如何聽懂美國人聊天正常語速 | 突破聽力難關：學習美式口語發音訣竅 | 理解美式發音，讓你的英語聽力更上一層樓 | 想聽懂快速英語口語？學會這些技巧 | 快速英語口語聽力攻略 | HannahLin",
+        "url": "https://www.youtube.com/watch?v=RlHVrHrZiUM",
+        "answer": [
+          "<p>答案在下期影片中</p>"
+        ]
+      },
+      {
+        "id": 258,
+        "title": "第258期 | 如何聽懂美國人聊天正常語速| 突破聽力難關：學習美式口語發音訣竅 |理解美式發音，讓你的英語聽力更上一層樓 | 想聽懂快速英語口語？學會這些技巧 | 快速英語口語聽力攻略 | HannahLin",
+        "url": "https://www.youtube.com/watch?v=hUE2iEE49PY",
+        "answer": [
+          "<p>答案在下期影片中</p>"
+        ]
+      },
+      {
+        "id": 257,
+        "title": "第257期| 美國人聊天正常語速 | 你能聽懂多少 | 聽力提高秘笈：別讓眼睛來主導，耳朵才是王道！| 聽力進階之路：練好耳朵，別被眼睛忽悠了 | 練聽力：慢就是快",
+        "url": "https://www.youtube.com/watch?v=PzpoJb4Hc2E",
+        "answer": [
+          "<p>答案在下期影片中</p>"
+        ]
+      },
+      {
+        "id": 256,
+        "title": "第256期 美國人聊天正常語速 | 你能聽懂多少 | 提高聽力 有捷徑嗎？| 聽力提高：沒有捷徑，只有穩步前行！ | Listening Practice | Hannah Lin",
+        "url": "https://www.youtube.com/watch?v=yy60ezlrxrI",
+        "answer": [
+          "<p>答案在本期影片中</p>"
+        ]
+      },
+      {
+        "id": 255,
         "title": "第255期 Listening practice | For those who truly want to work on their listening skills",
         "url": "https://www.youtube.com/watch?v=9YXSqkjVmNg",
         "answer": [
@@ -91,46 +134,31 @@
           "<p> I’m just doing some breathing exercises. I teach them <span class=\"text-red-400\">to</span> (<span class=\"text-red-400\">/tə/</span>) all my clients. <span class=\"bg-gray-100 font-medium\">It’s a great way</span> to let go of some anxiety.</p>",
           "<p>I like rid<span class=\"text-red-400\">ing</span> <span class=\"text-red-400\">(weak sound)</span> the 10-speed because it’s fun, uh, gives you energy, and <span class=\"bg-gray-100 font-medium\">it’s a great way</span> to <span class=\"text-green-500\">stay in shape</span>.</p>"
         ]
-      },
-      {
-        "title": "第256期 美國人聊天正常語速 | 你能聽懂多少 | 提高聽力 有捷徑嗎？| 聽力提高：沒有捷徑，只有穩步前行！ | Listening Practice | Hannah Lin",
-        "url": "https://www.youtube.com/watch?v=yy60ezlrxrI",
-        "answer": [
-          "<p>答案在本期影片中</p>"
-        ]
-      },
-      {
-        "title": "第257期| 美國人聊天正常語速 | 你能聽懂多少 | 聽力提高秘笈：別讓眼睛來主導，耳朵才是王道！| 聽力進階之路：練好耳朵，別被眼睛忽悠了 | 練聽力：慢就是快",
-        "url": "https://www.youtube.com/watch?v=PzpoJb4Hc2E",
-        "answer": [
-          "<p>答案在下期影片中</p>"
-        ]
-      },
-      {
-        "title": "第258期 | 如何聽懂美國人聊天正常語速| 突破聽力難關：學習美式口語發音訣竅 |理解美式發音，讓你的英語聽力更上一層樓 | 想聽懂快速英語口語？學會這些技巧 | 快速英語口語聽力攻略 | HannahLin",
-        "url": "https://www.youtube.com/watch?v=hUE2iEE49PY",
-        "answer": [
-          "<p>答案在下期影片中</p>"
-        ]
-      },
-      {
-        "title": "第259期 | 如何聽懂美國人聊天正常語速 | 突破聽力難關：學習美式口語發音訣竅 | 理解美式發音，讓你的英語聽力更上一層樓 | 想聽懂快速英語口語？學會這些技巧 | 快速英語口語聽力攻略 | HannahLin",
-        "url": "https://www.youtube.com/watch?v=RlHVrHrZiUM",
-        "answer": [
-          "<p>答案在下期影片中</p>"
-        ]
       }
     ],
     "short": [
       {
-        "title": "Episode 19",
-        "url": "https://www.youtube.com/shorts/shDt6FzGfUU",
+        "id": 23,
+        "title": "Episode 23",
+        "url": "https://www.youtube.com/shorts/7QTcSU4Pr9U",
+        "answer": ["<p>I must be making progress. <span class=\"text-green-500\">I don’t mean to</span> brag.</p>"]
+      },
+      {
+        "id": 22,
+        "title": "Episode 22",
+        "url": "https://www.youtube.com/shorts/oJkbdZUYSCk",
+        "answer": ["<p><span class=\"text-green-500\">I don't mean to</span> overstep. Who knows a son better than his father, right?</p>"]
+      },
+      {
+        "id": 21,
+        "title": "Episode 21",
+        "url": "https://www.youtube.com/shorts/cV8rwsqvjkw",
         "answer": [
-          "<p>What is <span class=\"text-green-500\">it</span> exactly that you want?</p>",
-          "<p>Family.</p>"
+          "<p>What exactly is <span class=\"text-green-500\">it</span> that she needs?</p>"
         ]
       },
       {
+        "id": 20,
         "title": "Episode 20",
         "url": "https://www.youtube.com/shorts/qvyXSUScLUo",
         "answer": [
@@ -139,21 +167,13 @@
         ]
       },
       {
-        "title": "Episode 21",
-        "url": "https://www.youtube.com/shorts/cV8rwsqvjkw",
+        "id": 19,
+        "title": "Episode 19",
+        "url": "https://www.youtube.com/shorts/shDt6FzGfUU",
         "answer": [
-          "<p>What exactly is <span class=\"text-green-500\">it</span> that she needs?</p>"
+          "<p>What is <span class=\"text-green-500\">it</span> exactly that you want?</p>",
+          "<p>Family.</p>"
         ]
-      },
-      {
-        "title": "Episode 22",
-        "url": "https://www.youtube.com/shorts/oJkbdZUYSCk",
-        "answer": ["<p><span class=\"text-green-500\">I don't mean to</span> overstep. Who knows a son better than his father, right?</p>"]
-      },
-      {
-        "title": "Episode 23",
-        "url": "https://www.youtube.com/shorts/7QTcSU4Pr9U",
-        "answer": ["<p>I must be making progress. <span class=\"text-green-500\">I don’t mean to</span> brag.</p>"]
       }
     ]
   }
