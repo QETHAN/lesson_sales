@@ -8,7 +8,9 @@
     "build": "next build",
     "export": "next export",
     "start": "next start -p 3000",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy:setup": "pm2 deploy production setup",
+    "deploy": "pm2 deploy produciton"
   },
   "repository": {
     "type": "git",
