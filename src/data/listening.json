@@ -57,6 +57,12 @@
     ],
     "short": [
       {
+        "id": 24,
+        "title": "Episode 24",
+        "url": "https://www.youtube.com/shorts/65zBK4zinTA",
+        "answer": ["<p>暂未公布</p>"]
+      },
+      {
         "id": 23,
         "title": "Episode 23",
         "url": "https://www.youtube.com/shorts/7QTcSU4Pr9U",
@@ -153,6 +159,12 @@
       }
     ],
     "short": [
+      {
+        "id": 24,
+        "title": "Episode 24",
+        "url": "https://www.youtube.com/shorts/65zBK4zinTA",
+        "answer": ["<p>暫未公佈</p>"]
+      },
       {
         "id": 23,
         "title": "Episode 23",
