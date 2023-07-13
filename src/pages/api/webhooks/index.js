@@ -6,8 +6,7 @@ const cors = Cors({
 
 const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 
-const webhookSecret =
-  "whsec_e899a987b1c34cd767c80e6dd43f2d653a941aeb9d91941ad6f295924c3898eb";
+const webhookSecret = "xxx";
 
 // Stripe requires the raw body to construct the event.
 export const config = {
